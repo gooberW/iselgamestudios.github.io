@@ -301,7 +301,7 @@ a {
   width: 1200px;
   border-radius: 30px;
   transition:all 3s cubic-bezier(.23,1.19,.9,.98);
-
+  z-index: 1000000;
 }
 
 .jam:hover {
