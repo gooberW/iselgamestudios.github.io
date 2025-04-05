@@ -295,10 +295,9 @@ a {
 
 .jam {
   background-image: url(img/jambanner.png);
-  background-color: red;
   background-size: cover;
   height: 550px;
-  width: 1200px;
+  width: 80vw;
   border-radius: 30px;
   transition:all 3s cubic-bezier(.23,1.19,.9,.98);
   z-index: 1000000;
@@ -329,7 +328,7 @@ a {
 .project-secondary {
   background-color: #000000;
   height: 400px;
-  width: 590px;
+  width: 610px;
   border-radius: 30px;
   transition:all 3s cubic-bezier(.23,1.19,.9,.98);
 
@@ -376,6 +375,8 @@ a {
 
 .carousel-inner {
   height: calc(70vh - 146px);
+  background-size: cover;
+  background-position: center;
 }
 .navbar-brand{
   transition: all 0.2s ease-in-out;
@@ -737,6 +738,12 @@ a {
     flex-direction: column;
   }
 
+  .jam {
+    background-image: url(img/jambanneMOBILE.png);
+    background-size: cover;
+    background-position: center;
+  }
+
   .p {
     width: 100%;
     margin-bottom: 40px;
@@ -765,8 +772,7 @@ a {
 
 @media (max-width: 480px) {
   .jam {
-    width: 80vw;
-    height: 500px;
+    background-image: url(img/jambanneMOBILE.png);
   }
 
   .navbar {
@@ -800,4 +806,43 @@ a {
     
   }
 
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .carousel-inner img{
+    height: 50vh;
+  }
+
+  .project {
+    width: 80vw;
+    height: 500px;
+  }
+  
+  .project-secondary
+  {
+    width: 80vw;
+      height: 300px;
+    }
+  .project .btn {
+    border-radius: 4vw;
+    font-family: 'Campton';
+    width: 25vw;
+  }
+  
+  .project-secondary .btn {
+    width: 25vw;
+    border-radius: 4vw;
+    font-family: 'Campton';
+    
+  }
+
+  #timer {
+    font-size: 1rem;
+    margin-left: 25%;
+    margin-top: 20px;
+  }
 }
