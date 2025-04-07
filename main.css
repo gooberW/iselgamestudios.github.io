@@ -328,7 +328,7 @@ a {
   width: 100%;
   border-radius: 30px;
   transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
-
+  border: 2px solid #141414;
 }
 
 .project-secondary {
@@ -337,6 +337,7 @@ a {
   width: 610px;
   border-radius: 30px;
   transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
+  border: 2px solid #141414;
 
 }
 
@@ -380,7 +381,7 @@ a {
 }
 
 .carousel-inner {
-  height: calc(70vh - 146px);
+  height: calc(700px - 146px);
   background-size: cover;
   background-position: center;
 }
@@ -397,7 +398,7 @@ a {
 
 .card {
   width: 800px;
-  height: 400px;
+  height: 100%;
   transition: all 0.2s ease-in-out;
 }
 
@@ -793,8 +794,9 @@ a {
     width: 100%;
   }
 
-  .carousel-inner {
-    height: 50vh;
+  .card {
+    width: 400px;
+    max-height: 380px;
   }
 
   .project {
@@ -827,9 +829,6 @@ a {
     width: 100%;
   }
 
-  .carousel-inner img{
-    height: 50vh;
-  }
 
   .project {
     width: 80vw;
