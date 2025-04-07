@@ -6,6 +6,11 @@ body {
   margin-top: 146px;
 }
 
+.p {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
 :target {
   scroll-margin-top: 146px; /* Match this value to your body's margin-top */
 }
@@ -97,7 +102,7 @@ h1 {
 }
 
 .footer{
-	background-color: #050b2b;
+	background-color: #000000;
   padding-top:30px;
   padding-bottom: 60px;
   align-items: center;
@@ -151,6 +156,7 @@ h1 {
 	position: relative;
   width: 150px;
 }
+/*
 .footer-col h4::before{
 	content: '';
 	position: absolute;
@@ -160,7 +166,7 @@ h1 {
 	height: 2px;
 	box-sizing: border-box;
 	width: 80px;
-}
+}*/
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -299,12 +305,12 @@ a {
   height: 550px;
   width: 80vw;
   border-radius: 30px;
-  transition:all 3s cubic-bezier(.23,1.19,.9,.98);
+  transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
   z-index: 1000000;
 }
 
 .jam:hover {
-  transform: scale(0.98);
+  /*transform: scale(0.98);*/
   filter: hue-rotate(100deg);
 }
 
@@ -319,9 +325,9 @@ a {
 .project {
   background-color: #000000;
   height: 550px;
-  width: 80vw;
+  width: 100%;
   border-radius: 30px;
-  transition:all 3s cubic-bezier(.23,1.19,.9,.98);
+  transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
 
 }
 
@@ -330,7 +336,7 @@ a {
   height: 400px;
   width: 610px;
   border-radius: 30px;
-  transition:all 3s cubic-bezier(.23,1.19,.9,.98);
+  transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
 
 }
 
@@ -679,8 +685,16 @@ a {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  
+@media (max-width: 1300px) {
+  #timer {
+    margin:0;
+    font-size: 2rem;  
+  }
+
+  .jam {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
