@@ -18,9 +18,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../main.css">
 
-  <link rel="icon" type="fav" href="../img/favicon-32x32.png"> <!-- For .ico files -->
+  <link rel="icon" type="fav" href="../img/favicon-32x32.png"> 
 
 </head>
 
@@ -31,30 +31,31 @@
         <nav class="navbar fixed navbar-expand-lg bg-black">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html#home">
-              <img src="../../img/IGS_Logo_White.svg" width="115" height="115" class="ms-5 d-inline-block align-text-top isel p-0" alt="ISEL Game Studios">
+              <img src="../img/IGS_Logo_White.svg" width="115" height="115" class="ms-5 d-inline-block align-text-top isel p-0" alt="ISEL Game Studios">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav nav-pills nav-fill me-auto mb-2 mb-lg-0">
+              <ul class="nav-fill nav-pills navbar-nav mb-2 mb-lg-0 me-auto">
                 <li class="nav-item">
-                  <a class="nav-link text-light p-3 me-5" aria-current="page" href="../index.html#events">Eventos</a>
+                  <a class="nav-link p-3 text-light me-5" aria-current="page" href="#events">Eventos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light p-3 me-5" href="../index.html#projects">Projetos</a>
+                  <a class="nav-link p-3 text-light me-5" href="#projects">Projetos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light p-3 me-5" href="../about-us.html">Sobre Nós</a>
+                  <a class="nav-link p-3 text-light me-5" href="#jams">Game Jams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-3 text-light me-5" href="about-us.html">Sobre Nós</a>
                 </li>
               </ul>
-              <div class="col icons d-flex px-2 py-2 justify-content-end">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-instagram instagram social-icon ms-3 me-3 " role="button"></i>
-                </a>
-                <a href="https://discord.gg/tTDQ3RzPTg" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-discord discord social-icon ms-3 me-3" role="button"></i>
-                </a>
+              <div class="col d-flex justify-content-end icons px-2 py-2">
+                <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram me-3 ms-3 social-icon"></i></a>
+                <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x me-3 ms-3 social-icon"></i></a>
+                <a href="https://www.linkedin.com/in/isel-game-studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin me-3 ms-3 social-icon"></i></a>
+                <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-3 ms-3 social-icon"></i></a>
               </div>
             </div>
           </div>
@@ -64,51 +65,60 @@
     
   </section>
 
-  <section id="events">
-    <div id="carousel" class="carousel carousel-dark slide slide-start" data-bs-ride="carousel" data-bs-interval="5000">
+  <section id="events2">
+    <div id="carousel2" class="carousel carousel-dark slide slide-start" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../../img/iselEvent.png" class="d-block w-100" alt="...">
+          <img src="../img/banner.png" class="d-block w-100" alt="...">
         </div>
         
       </div>
     </div>
-    <div class="container-fluid d-flex bg-light justify-content-center align-items-center p-3"> 
-          <span class="ms-3">
+    <div class="container-fluid d-flex bg-light justify-content-center align-items-center p-3">
+      <div class="row d-flex">
+        <div class="footer-col">
+          <span>
             <i class="bi bi-calendar-week-fill event-icon me-1"></i>
+            <span class="text text-secondary me-5">10-04-2025</span>
           </span>
-          <span class="text text-secondary me-5">12-03-2025</span>
+        </div>
+        <div class="footer-col">
           <span>
             <i class="bi bi-geo-alt-fill event-icon me-1"></i>
+            <span class="text text-secondary me-5">G.0.19 - ISEL</span>
           </span>
-          <span class="text text-secondary me-5">Auditório/Sala X</span>
+        </div>
+        <div class="footer-col">
           <span>
             <i class="bi bi-clock-fill event-icon me-1"></i>
+            <span class="text text-secondary">18:30</span>
+            <span>
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Indie+Game+Dev%3A+Do+Ideia+ao+Jogo+Publicado&dates=20250312T170000/20250312T190000&location=ISEL&details=Evento+sobre+desenvolvimento+de+jogos+indie%2C+desde+a+ideia+at%C3%A9+a+publica%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn calendar" title="Adicionar ao Google Calendar">
+                <i class="bi bi-calendar-plus text-white"></i>
+              </a>
+            </span>
           </span>
-          <span class="text text-secondary">17:00</span>
-          <span>
-            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Indie+Game+Dev%3A+Do+Ideia+ao+Jogo+Publicado&dates=20250312T170000/20250312T190000&location=ISEL&details=Evento+sobre+desenvolvimento+de+jogos+indie%2C+desde+a+ideia+at%C3%A9+a+publica%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn calendar" title="Adicionar ao Google Calendar">
-              <i class="bi bi-calendar-plus text-white"></i>
-            </a>
-          </span>
+        </div> 
+        </div>
     </div>
     
 
       <div class=" container-fluid d-flex flex-column align-items-center mt-5">
-          <div class="text-box-event bg-light text-black text-center p-4 rounded">
+          <div class="text-box-event bg-light text-black text-center p-4 rounded w-100">
               <p class="text">
-                  <strong>Título:</strong> Indie Game Dev: Da Ideia ao Jogo Publicado.
+                  <strong>Título:</strong> From Concept To Release
               </p>
               <p class="text">
                 <strong>Orador:</strong> <a href="">Diogo Cardoso</a> <a class="text-secondary">(Imagination Overflow)</a>
             </p>
           </div>
-          <div class="text-box-event bg-white text-black text-center p-4 rounded mb-5">
+          <div class="text-box-event bg-white text-black text-center p-4 rounded mb-5 w-100">
             <p class="text">
-                bla bla bla bla...
+                Nesta GameTalk o nosso orador irá falar sobre o seu percurso no desenvolvimento de jogos, desde a ideia inicial até à publicação do jogo. 
             </p>
             <p class="text">
-                bla bla bla...
+              O orador Diogo Cardoso irá partilhar as suas experiências, desafios e aprendizagens ao longo do caminho, dando dicas valiosas para quem está a começar na indústria dos 
+                videojogos.
             </p>
         </div>
       </div>
@@ -117,9 +127,9 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-row">
-      <div class="col justify-content-center d-flex">
-        <a href="../pt/index.html#home">
-          <img src="../../img/IGS_Logo_White.svg" width="110" height="110" class="footer-brand" alt="ISEL Game Studios" role="button">
+      <div class="col d-flex justify-content-center">
+        <a href="#home">
+          <img src="../img/IGS_Logo_White.svg" width="110" height="110" class="footer-brand" alt="ISEL Game Studios" role="button">
         </a>
       </div>
     </div>
@@ -130,8 +140,10 @@
       <div class="footer-col">
         <h4>Socials</h4>
         <div class="social-links">
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-discord"></i></a>
+          <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/in/isel-game-studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+          <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -139,8 +151,8 @@
         <p class="email">gamestudios@isel.pt</p>
       </div>
       <div class="footer-col">
-        <a class="lang active me-2" role="button" href="../eventos/indie-game-dev-da-ideia-ao-jogo-publicado.html">Português</a>
-        <a class="lang" role="button" href="../../en/events/indie-game-dev-da-ideia-ao-jogo-publicado.html">English</a>
+        <a class="active lang me-2" role="button" href="#home">Português</a>
+        <a class="lang" role="button" href="en/index.html">English</a>
       </div>
     </div>
   </div>

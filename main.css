@@ -56,7 +56,7 @@ h1 {
 .calendar {
   margin-left: 30px;
   font-family: 'Campton';
-  background-color: #cd205c;
+  background-color: #ffb30b;
   color: #fff;
 }
 
@@ -229,7 +229,7 @@ a {
 
 .event-icon {
   font-size: 1rem;
-  color: #c60e3a;
+  color: #ffb30b;
 }
 
 .subtitle {
@@ -790,72 +790,62 @@ a {
     background-image: url(img/jambanneMOBILE.png);
   }
 
+  .carousel-inner {
+    height: calc(500px - 146px);
+  }
+
   .navbar {
     width: 100%;
   }
 
   .card {
-    width: 400px;
+    width: 70vw;
     max-height: 380px;
   }
 
   .project {
     width: 80vw;
-    height: 500px;
+    height: 200px;
   }
   
   .project-secondary
   {
     width: 80vw;
-      height: 300px;
+      height: 200px;
     }
-  .project .btn {
-    border-radius: 4vw;
-    font-family: 'Campton';
-    width: 25vw;
-  }
   
-  .project-secondary .btn {
-    width: 25vw;
-    border-radius: 4vw;
-    font-family: 'Campton';
-    
+  .project , .project-secondary h1 {
+    font-size: 1.5rem;
+    margin-top: 0px;
   }
 
-}
-
-@media (max-width: 400px) {
-  .navbar {
-    width: 100%;
+  .icon {
+    visibility: hidden;
   }
 
-
-  .project {
+  .jam {
+    height: 300px;
     width: 80vw;
-    height: 500px;
-  }
-  
-  .project-secondary
-  {
-    width: 80vw;
-      height: 300px;
-    }
-  .project .btn {
-    border-radius: 4vw;
-    font-family: 'Campton';
-    width: 25vw;
-  }
-  
-  .project-secondary .btn {
-    width: 25vw;
-    border-radius: 4vw;
-    font-family: 'Campton';
-    
+    align-items: center;
+    justify-content: center;
   }
 
   #timer {
-    font-size: 1rem;
-    margin-left: 25%;
-    margin-top: 20px;
+    margin:0;
+    font-size: 1.3rem;  
+    margin-top: 200px;
   }
+
+  #jams .container{
+    padding-bottom: 200px;
+  }
+
+  #events2 .row {
+    height: 200px;
+  }
+  
+  #events2 .text {
+    
+  }
+
 }
