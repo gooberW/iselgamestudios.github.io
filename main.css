@@ -36,6 +36,7 @@ body {
   font-style: normal;
 }
 
+
 h1 {
   user-select: none;
 }
@@ -54,10 +55,10 @@ h1 {
 }
 
 .calendar {
-  margin-left: 30px;
   font-family: 'Campton';
   background-color: #ffb30b;
   color: #fff;
+  width: 100px;
 }
 
 .calendar:hover {
@@ -66,8 +67,11 @@ h1 {
 }
 
 .carousel-item img{
-  transition: all 0.2s ease-in-out;
   object-fit: cover;
+  height: 100%;
+}
+
+.carousel-item {
   height: 100%;
 }
 
@@ -114,6 +118,19 @@ h1 {
    padding: 0 15px;
 }
 
+.event-col{
+  width:25%;
+  padding: 0 15px;
+}
+
+.row-ev {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%
+}
+
 .btn-lang {
   color: #fff;
 }
@@ -128,7 +145,7 @@ h1 {
 }
 
 .lang {
-  font-family: 'Campton';
+  font-family: 'TangoSans';
   user-select: none;
   color: #9b9b9b;
   transition: all 0.2s ease-in-out;
@@ -211,6 +228,20 @@ h1 {
     margin-bottom: 30px;
   }
 
+  .row-ev {
+    width: 100%;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+  }
+
+  .event-col{
+    width: 100%;
+    padding: 10px;
+  }
+
+  
+
 }
 
 
@@ -288,7 +319,7 @@ a {
 .email {
   margin-top: 12px;
   font-family: 'Campton';
-  color: #ffffff;
+  color: #9b9b9b;
 }
 
 .change .bar2 {
@@ -614,7 +645,7 @@ a {
 }
 
 .text-box-event {
-  width: 900px;
+  width:75%;
 }
 
 
@@ -638,10 +669,6 @@ a {
     max-height: 380px;
   }
 
-  .carousel {
-    max-height: 355px;
-    background-size: fill;
-  }
 
 
   .zoom {
@@ -844,8 +871,8 @@ a {
     height: 200px;
   }
   
-  #events2 .text {
-    
+  .text-box-event {
+    width: 100%;
   }
 
 }
