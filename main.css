@@ -312,7 +312,7 @@ a {
 }
 
 .text-box {
-  max-width: 800px; /* Adjust width */
+  max-width: 75%; /* Adjust width */
   line-height: 1.6; /* Improve readability */
   text-align: justify; /* Evenly distribute text */
 }
@@ -836,6 +836,10 @@ a {
 @media (max-width: 480px) {
   .jam {
     background-image: url(img/jambanneMOBILE.png);
+  }
+
+  .text-box {
+    max-width: 100%;
   }
 
   .carousel-inner {
