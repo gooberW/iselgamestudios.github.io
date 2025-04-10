@@ -58,11 +58,12 @@ h1 {
   font-family: 'Campton';
   background-color: #ffb30b;
   color: #fff;
+  transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
+
 }
 
 .calendar:hover {
-  background-color: #000000;
-  color: #fff;
+  transform: translateY(-10px);
 }
 
 .carousel-item img{
