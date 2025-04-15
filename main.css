@@ -15,9 +15,6 @@ body {
   scroll-margin-top: 146px; /* Match this value to your body's margin-top */
 }
 
-.old {
-  filter: grayscale(1);
-}
 
 .hidden {
   transform: translateY(50px);
