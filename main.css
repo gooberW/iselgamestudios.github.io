@@ -94,6 +94,26 @@ h1 {
   height: 100%;
 }
 
+.soon-event {
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  border-radius: 5px;
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.soon-event h1 {
+  font-size: 4rem;
+}
+
+.soon-event:hover {
+  transform: translateY(-5px);
+  background-color: #050b2b;
+}
+
 .carousel-item {
   height: 100%;
 }
