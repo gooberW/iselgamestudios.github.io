@@ -84,7 +84,9 @@ h1 {
 }
 
 .calendar:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  background-color: #ffb30b;
+
 }
 
 .carousel-item img{
