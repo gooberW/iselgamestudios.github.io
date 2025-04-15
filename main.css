@@ -177,6 +177,16 @@ h1 {
   transition: all 0.2s ease-in-out;
 }
 
+.lang-disabled {
+  font-family: 'TangoSans';
+  user-select: none;
+  color: #9b9b9b;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
 .lang:hover {
   color:#fff
 }
@@ -543,7 +553,9 @@ a {
 
 .ev {
   padding-bottom: 50px;
+  margin-bottom: 10vh;
 }
+
 .social-icon {
   color: white;
   font-size: 1.5rem;
