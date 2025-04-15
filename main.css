@@ -951,4 +951,8 @@ a {
     width: 100%;
   }
 
+  .row-card {
+    flex-direction: column;
+  }
+
 }
