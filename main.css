@@ -80,10 +80,11 @@ h1 {
   background-color: #ffb30b;
   color: #fff;
   width: 100px;
+  transition: all 0.2s ease-in-out;
 }
 
 .calendar:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .carousel-item img{
