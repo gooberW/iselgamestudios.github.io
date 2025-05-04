@@ -572,6 +572,18 @@ a {
   color: #e51f2b;
 }
 
+#events3 .event-icon {
+  color: #a4001b;
+}
+
+#events3 .calendar {
+  background-color: #a4001b;
+}
+
+#events3 .calendar:hover {
+  background-color: #a4001b;
+}
+
 
 
 .poligono {
