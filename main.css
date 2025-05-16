@@ -18,7 +18,7 @@ body {
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-auto-columns: 80vh;
+  grid-auto-columns: 40vw;
   grid-auto-rows: 20vw;
   gap: 1em;
   grid-template-areas: 
@@ -1065,8 +1065,13 @@ a {
   @media (max-width: 900px) {
 
     .grid-container {
-      grid-auto-rows: 300px;
-      grid-auto-columns: 300px;
+      grid-auto-rows: 60vw;
+      grid-auto-columns: 60vw;
+      grid-template-areas: 
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4";
     }
 
     .box h1 {
