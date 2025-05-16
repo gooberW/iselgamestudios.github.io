@@ -15,6 +15,40 @@ body {
   scroll-margin-top: 121px; /* Match this value to your body's margin-top */
 }
 
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-auto-columns: 80vh;
+  grid-auto-rows: 20vw;
+  gap: 1em;
+  grid-template-areas: 
+  "box-1 box-1"
+  "box-2 box-3"
+  "box-2 box-4";
+}
+
+.box {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  border: #141414 2px solid;
+  text-align: left;
+  justify-content: left;
+  color: #fff;
+  transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
+}
+
+.box h1 {
+  margin: 15px;
+  font-size: 2rem;
+}
+
+.box:hover {
+  border: #e51f2b 2px solid;
+  transform: scale(0.99);
+  background-color: #050b2b;
+}
+
 
 .hidden {
   transform: translateY(50px);
@@ -32,8 +66,8 @@ body {
 
 }
 
-.project-secondary:nth-child(2) {
-  transition-delay: 400ms;
+.box:nth-child(2) {
+  transition-delay: 200ms;
 }
 
 @font-face {
@@ -537,6 +571,7 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .events .col {
@@ -607,6 +642,8 @@ a {
 .fs-tiny {
   font-size: 12px;
 }
+
+
 
 
 .text-container {
@@ -826,13 +863,15 @@ a {
     align-items: center;
     justify-content: center;
   }
+
+  .grid-container {
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-3"
+    "box-2 box-4";
+  }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
-
-  
-}
 
 /* Custom breakpoints (if needed) */
 @media (min-width: 480px) and (max-width: 1400px) {
@@ -977,6 +1016,8 @@ a {
     width: 80vw;
     height: 200px;
   }
+
+  
   
   .project-secondary
   {
@@ -1018,6 +1059,17 @@ a {
     width: 100%;
   }
 
-  
 
 }
+
+  @media (max-width: 900px) {
+
+    .grid-container {
+      grid-auto-rows: 55vw;
+      grid-auto-columns: 30vh;
+    }
+
+    .box h1 {
+      font-size: 1.1rem;
+    }
+  }
