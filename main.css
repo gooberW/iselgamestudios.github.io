@@ -18,7 +18,7 @@ body {
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-auto-columns: 40vw;
+  grid-auto-columns: 30vw;
   grid-auto-rows: 20vw;
   gap: 1em;
   grid-template-areas: 
@@ -123,6 +123,11 @@ h1 {
 
 }
 
+#events a {
+  display: flex;
+  justify-content: center;
+}
+
 
 .carousel-item img{
   object-fit: cover;
@@ -135,14 +140,69 @@ h1 {
   height: 100%;
 }
 
-.card-title {
-  font-size: 1.2rem;
-}
+.card {
+            background-color: #141414;
+            border-radius: 10px;
+            height: 250px;
+            width: 400px;
+            position: relative; /* Needed for absolute positioning of overlay */
+            overflow: hidden; /* Ensures content stays within rounded corners */
+            transition: all 0.2s ease-in-out;
+        }
 
-.card-text {
-  font-family: 'Campton';
-  font-size: 1.2rem;
-}
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        /* Optional: If you want to add an image */
+        .card-img {
+          justify-content: left;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+          }
+
+        .card-content {
+            position: relative; /* Brings text above the overlay */
+            z-index: 20; /* Higher than overlay's z-index */
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 35%;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            font-size: 0.9rem;
+            color: white;
+            font-family: 'Campton';
+        }
+
+        
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #e51f2b;
+  }
 
 .text {
   font-family: 'Campton';
@@ -373,10 +433,6 @@ a {
   color: #c9c9c9;
 }
 
-.card-text {
-  font-size: 0.8rem;
-}
-
 .email {
   margin-top: 12px;
   font-family: 'Campton';
@@ -396,7 +452,7 @@ a {
   background-size: cover;
   height: 550px;
   width: 80vw;
-  border-radius: 30px;
+  border-radius: 10px;
   transition:all 1.5s cubic-bezier(.23,1.19,.9,.98);
   z-index: 1000000;
 }
@@ -502,6 +558,7 @@ a {
   width: 40%;
   padding: 20px;
   height: 100%;
+  justify-content: center;
 }
 
 .soon-event {
@@ -522,21 +579,6 @@ a {
 .soon-event:hover {
   transform: translateY(-5px);
   background-color: #050b2b;
-}
-
-.card {
-  width: 100%;
-  height: 310px;
-  transition: all 0.2s ease-in-out;
-}
-
-.card .soon {
-  color: black;
-  background-color: black;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .nav-link {
@@ -666,15 +708,6 @@ a {
   transition: all 0.2s ease;
 }
 
-.card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card img.card-img {
-  transition: all 0.2s ease-in-out;
-}
 
 .title {
   margin-top: 150px;
@@ -726,30 +759,16 @@ a {
 }
 
 
-.card:hover img.card-img {
-  transform: scale(1.05);
-  filter: brightness(0.85);
-}
 
 .bi-search {
   position: absolute;
   top: -100px;
 }
 
-.card:hover .bi-search {
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.4s ease;
-}
-
 .image-overlay {
   background-color: #7c44ff;
   opacity: 0;
   transition: opacity 0.2s ease;
-}
-
-.card:hover .image-overlay {
-  opacity: 0.5;
 }
 
 .bg-purple {
