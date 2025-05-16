@@ -1065,8 +1065,8 @@ a {
   @media (max-width: 900px) {
 
     .grid-container {
-      grid-auto-rows: 55vw;
-      grid-auto-columns: 30vh;
+      grid-auto-rows: 300px;
+      grid-auto-columns: 300px;
     }
 
     .box h1 {
