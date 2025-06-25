@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-top: 121px;
+  margin-top: 97px;
 }
 
 .p {
@@ -12,7 +12,12 @@ body {
 }
 
 :target {
-  scroll-margin-top: 121px; /* Match this value to your body's margin-top */
+  scroll-margin-top: 97px; /* Match this value to your body's margin-top */
+}
+
+.navbar {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .grid-container {
