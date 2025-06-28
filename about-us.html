@@ -94,7 +94,7 @@
         </div>
         <div class="text-box bg-light text-black text-center rounded">
           <p class="text">
-            Ao longo do ano, organizamos <strong>game jams, workshops, palestras e projetos colaborativos</strong>, ajudando os membros a desenvolver as suas competências  
+            Ao longo do ano, organizamos <strong>Game Jams, workshops, palestras e projetos colaborativos</strong>, ajudando os membros a desenvolver as suas competências  
             e a ganhar experiência prática na indústria dos videojogos.  
         </p>
         <p class="text">
@@ -109,10 +109,13 @@
 <section id="logos" class="bg-black events d-flex justify-content-center">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1 class="text-white" style="font-size: 2rem;">Logotipos</h1>
+      <div class="col d-flex flex-column align-items-center">
+        <h1 class="text-white" style="font-size: 2rem;">A MARCA</h1>
+        <p class="manual" data-filename="manual_igs_v2" data-format="pdf">Manual de Normas Gráficas</p>
       </div>
     </div>
+
+
     <div class="grid-container-logos">
   <!-- Box 1 -->
   <div class="box-logo hidden justify-content-center align-items-center d-flex" style="grid-area: box-1">
@@ -215,10 +218,12 @@
       crossorigin="anonymous"></script>
 
       <script>
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Add click event to all download buttons
-  document.querySelectorAll('.overlay-btn').forEach(button => {
-    button.addEventListener('click', function(e) {
+  // Add click event to all download buttons and manual link
+  document.querySelectorAll('.overlay-btn, .manual').forEach(element => {
+    element.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default behavior for links
       e.stopPropagation(); // Prevent event bubbling
       
       const filename = this.getAttribute('data-filename');
@@ -226,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Create a temporary link
       const link = document.createElement('a');
-      link.href = `img/${filename}.${format}`;
+      link.href = `img/${filename}.${format}`; // Changed from img/ to docs/
       link.download = `${filename}.${format}`;
       
       // Trigger the download
@@ -236,6 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 </script>
     </html>
 

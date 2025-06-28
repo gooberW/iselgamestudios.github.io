@@ -98,6 +98,17 @@ body {
     color: #e51f2b;
 }
 
+.manual {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.manual:hover {
+  color: #e51f2b;
+}
+
 .button-overlay:hover {
     opacity: 1;
 }
