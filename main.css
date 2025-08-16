@@ -44,6 +44,10 @@ body {
   "box-5 box-6";
 }
 
+#projects .grid-container h1{
+  text-shadow: #000000 0px 0px 20px;
+}
+
 .box {
   background-color: #000000;
   border-radius: 10px;
@@ -52,7 +56,10 @@ body {
   text-align: left;
   justify-content: left;
   color: #fff;
-  transition:all 0.3s ease-in-out
+  transition:all 0.3s ease-in-out;
+  background-size: cover;        /* Scale to cover box */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Prevent tiling */
 }
 
 .box-logo {
