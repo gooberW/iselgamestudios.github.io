@@ -73,6 +73,29 @@ body {
   transition:all 1s ease-in-out
 }
 
+#joinus .container {
+  display: flex;
+  max-width: 60%;
+}
+
+#joinus .col {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#joinus p {
+  max-width: 60%;
+}
+
+#joinus .btn:hover {
+  background-color: #e51f2b;
+  color: #000030;
+  border-color: #e51f2b;
+}
+
+
 .button-overlay {
     position: absolute;
     top: 0;
