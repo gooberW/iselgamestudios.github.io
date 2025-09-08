@@ -85,7 +85,11 @@ body {
   }
 }
 
-
+#joinus .btn:hover {
+  background-color: #e51f2b;
+  color: #000030;
+  border-color: #e51f2b;
+}
 
 .button-overlay {
     position: absolute;
