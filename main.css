@@ -44,6 +44,7 @@ body {
 
 .grid-container-f h3 {
   text-shadow: #000000 0px 0px 20px;
+  font-size: 2rem;
 }
 
 .grid-container-f > div, .grid-container-f > a {
@@ -1216,7 +1217,7 @@ a {
 
 }
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
 
     .grid-container {
       grid-auto-rows: 60vw;
@@ -1230,15 +1231,16 @@ a {
 
     .grid-container-f {
       grid-auto-rows: 30vw;
-      grid-auto-columns: 30vw;
+      grid-auto-columns: 50vw;
       grid-template-areas: 
-      "box-1 box-2"
-      "box-3 box-4"
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4"
       "box-5";
-  
     }
 
     .box h1 {
       font-size: 1.1rem;
     }
-  }
+}
