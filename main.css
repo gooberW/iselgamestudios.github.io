@@ -39,14 +39,14 @@ body {
   grid-auto-rows: 15vw;
   gap: 1em;
   grid-template-areas: 
-  "box-1 box-2 box-3 box-4";
+  "box-1 box-2 box-3 box-4 box-5";
 }
 
 .grid-container-f h3 {
   text-shadow: #000000 0px 0px 20px;
 }
 
-.grid-container-f > div {
+.grid-container-f > div, .grid-container-f > a {
   background-image: url(./img/anon.svg);
   background-size: cover; /* or contain */
   background-position: center;
@@ -1234,6 +1234,7 @@ a {
       grid-template-areas: 
       "box-1 box-2"
       "box-3 box-4"
+      "box-5";
   
     }
 
