@@ -1,0 +1,76 @@
+#project-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: var(--contrast-color);
+}
+
+.project-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--contrast-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url("../assets/sandman_titlecard.png");
+    margin-bottom: 50px;
+}
+
+#project-banner p {
+    background-color: var(--contrast-color) !important;
+    padding: 10px 250px;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    color: var(--primary-color);
+}
+
+
+#project-banner .title {
+    background-color: var(--contrast-color) !important;
+    padding-bottom: 20px;
+    font-size: 32px;
+    transition: all 0.5s ease-in-out;
+    color: var(--primary-color);
+}
+
+.nav-links li { display: inline-block; }
+.nav-links li a {
+  color: var(--contrast-color);
+}
+
+.buttons a {
+  color: var(--faded-white);
+}
+
+.buttons a:hover {
+    color: var(--contrast-color) !important ;
+}
+
+.menu-btn {
+    color: var(--contrast-color) !important;
+}
+
+.active {
+    color: var(--contrast-color) !important;
+}
+
+@media (max-width: 1100px) {
+    #project-banner p {
+        padding: 10px 10vw; 
+    }
+}
+
+@media (max-width: 450px) {
+    #project-banner .title {
+        font-size: 32px !important;
+    }
+}

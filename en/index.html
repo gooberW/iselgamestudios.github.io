@@ -1,277 +1,166 @@
-<!doctype html>
-<html lang="pt">
-
+<!DOCTYPE html>
+<html lang="pt-PT">
 <head>
-  <title>ISEL Game Studios</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!-- Google Fonts CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="../main.css">
-
-  <link rel="icon" type="fav" href="../img/favicon-32x32.png"> <!-- For .ico files -->
-  <script defer src="../scripts/app.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEL Game Studios</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="../assets/favicon180x180.png">
 </head>
 
 <body>
-  <section id="home">
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg fixed">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#home" title="Início">
-              <img src="../img/IGS_icon_white_2.svg" width="40" height="40" class="d-inline-block align-text-top p-0 isel ms-5" alt="ISEL Game Studios">
+    <div class="transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div class="app">
+        <header id="navbar">
+            <nav class="navbar">
+
+                <a href="#home">
+                    <img class="logo" src="../assets/icon_blue.png" alt="Logo">
+                </a>
+
+                <ul class="menu">
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#jams">Game Jams</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                </ul>
+
+                <ul class="nav-links">
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#jams">Game Jams</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    
+                </ul>
+
+                <div class="buttons">
+                    <a onclick=showLinks() class="menu-btn"><i class="bi bi-list"></i></a>
+                    <a  href="../index.html">PT</a>
+                    <a class="active" href="#l">EN</a>
+                </div>
+
+            </nav>
+            
+        </header>
+
+        <section id="home" class="home">
+            <img class="home-logo" src="../assets/IGS_Logo_BLue.svg" alt="ISEL Game Studios Logo">
+        </section>
+
+        <section id="events" class="events">
+            <h1 class="title">Eventos</h1>
+            <p>GameTalks e Workshops</p>
+            <div class="row">
+                <div class="col">
+                    <div class="event-card over">
+                        <div class="event-card-img">
+                            <img src="../assets/insta_igs.png" alt="Event Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="event-card over">
+                        <div class="event-card-img">
+                            <img src="../assets/git_igs.png" alt="Event Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h1 class="title">Projetos</h1>
+            <p>Projetos de longo prazo</p>
+            <div class="grid-container">
+                <a href="#" class="box" style="grid-area: box-1; background-image: url(../assets/sandman_titlecard.png);"> <h1>EM BREVE</h1></a>
+                <div class="box" style="grid-area: box-2"><h1>EM BREVE</h1></div>
+                <div class="box" style="grid-area: box-3"><h1>EM BREVE</h1></div>
+                <div class="box" style="grid-area: box-4"><h1>EM BREVE</h1></div>
+            </div>
+        </section>
+
+        <section id="jams" class="jams">
+            <h1 class="title">Game Jams</h1>
+            <p>Game Jams organizadas por nós</p>
+            <a href="https://itch.io/jam/igs-easter-bunny-jam" class="jam">
+                <h1 class="jam-title">Easter Jam 2025</h1>
+                <div class="jam-date">
+                    <i class="date-icon bi bi-calendar-week"></i>
+                    <p>16-24 de Abril de 2025</p>
+                </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="nav-fill nav-pills navbar-nav mb-2 mb-lg-0 me-auto">
-                <li class="nav-item">
-                  <a class="nav-link p-2 text-light me-5" aria-current="page" href="#events">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link p-2 text-light me-5" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link p-2 text-light me-5" href="#jams">Game Jams</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link p-2 text-light me-5" href="about-us.html">About Us</a>
-                </li>
-              </ul>
-              <div class="col d-flex justify-content-end icons px-2 py-2">
-                <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram social-icon"></i></a>
-                <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x social-icon"></i></a>
-                <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin social-icon"></i></a>
-                <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube social-icon"></i></a>
-              </div>
+            
+        </section>
+
+        <section id="join-us" class="join-us">
+            <h1 class="title">Join Us!</h1>
+            <p>We're always looking for new members, so, if you're a university student and you want to 
+                join us, just fill out the form by clicking the button below!</p>
+            <a href="https://forms.gle/JL4B5uN6mMXcCF6QA" class="join-btn">Go!</a>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="row">
+                <div class="col">
+                    <a href="#home">
+                        <img src="../assets/IGS_Logo_white_2.png" class="logo">
+                    </a>  
+                </div>
+                <div class="col">
+                    <h4>Contacta-nos</h4>
+                    <p>gamestudios@isel.pt</p>
+                </div>
+                <div class="col">
+                    <h4>Socials</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!--carousel-->
-    <div id="carousel" class="carousel carousel-dark slide slide-start" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner">
-        <div class="carousel-item active ">
-          <img src="../img/2banner22.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/sumo.gif" class="d-block w-100" alt="...">
-        </div>
-        
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-<section id="events" class="bg-black events ">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-white" style="font-size: 2rem;">Events</h1>
-      </div>
-    </div>
-    <div class="row-card d-flex">
-      <div class="col-card">
-        <a href="../eventos/gametalk-from-concept-to-release.html">
-          <div class="card">
-              <div class="overlay">
-                <img src="../img/banner.png" alt="" class="card-img">
-              </div>
-              <div class="card-content">
-                <div class="card-title">GameTalk: From Concept to Release</div>
-                <div class="card-description">10-04-2025 | 18:30</div>
-                <div class="card-description">G.0.19(LM) - ISEL</div>
-              </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-card">
-        <a href="../eventos/gametalk-desmistificacao-do-git.html">
-          <div class="card">
-              <div class="overlay">
-                <img src="../img/banner_git.png" alt="" class="card-img">
-              </div>
-              <div class="card-content">
-                <div class="card-title">GameTalk: Desmistificação do Git</div>
-                <div class="card-description">21-05-2025 | 18:40</div>
-                <div class="card-description">G.0.15(LS3) - ISEL</div>
-              </div>
-          </div>
-        </a>
-      </div>
-      </div>
-    </div>
-  </div>       
-</section>
-
-
-
-<section id="projects" class="bg-black events d-flex justify-content-center">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-white" style="font-size: 2rem;">Projects</h1>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="box hidden" style="grid-area: box-1; background-image: url(../img/sandman_titlecard.png);"> <h1>COMING SOON.</h1></div>
-      <div class="box hidden" style="grid-area: box-2"><h1>COMING SOON.</h1></div>
-      <div class="box hidden" style="grid-area: box-3"><h1>COMING SOON.</h1></div>
-      <div class="box hidden" style="grid-area: box-4"><h1>COMING SOON.</h1></div>
-
-    </div>
-      
-    </div>
-  </div>       
-</section>
-
-<section id="jams" class="bg-black events">
-  <div class="container" style="padding-bottom: 0px">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-white" style="font-size: 2rem;">Game Jams</h1>
-      </div>
-    </div>
-    <div class="container-fluid d-block">
-      <div class="row" style="padding-top: 0px;">
-        <div class="col">
-          <a href="https://itch.io/jam/igs-easter-bunny-jam" target="_blank" rel="noopener noreferrer">
-            <div class="d-flex flex-column jam hidden">
-              <span>
-                <p id="timer" class="text-black"></p>
-              </span>
+            <div class="row">
+                <div class="col">
+                    <p>ISEL Game Studios © 2025</p>
+                </div>
             </div>
-          </a>
-        </div>
-      </div>
+        </footer>
+
     </div>
-  </div>       
-</section>
 
-<section id="joinus" class="bg-black events d-flex align-items-center justify-content-center min-vh-100 text-center">
-  <div class="px-3" style="max-width: 800px;">
-    <h1 class="text-white display-3 display-md-4 display-sm-5">
-      Join Us!
-    </h1>
-    <p class="text-white-50 fs-5">
-      We are always looking for new members, so, if you are a university student, and you want to join us, 
-      don't hesitate, just fill out the form clicking the button below!
-    </p>
-    <a href="https://forms.gle/JL4B5uN6mMXcCF6QA" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn btn-lg btn-outline-light mt-3">
-        Go!
-      </button>
-    </a>
-  </div>
-</section>
+    
 
 
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/page_transition.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-row">
-      <div class="col d-flex justify-content-center">
-        <a href="#home">
-          <img src="../img/IGS_Logo_White.svg" width="110" height="110" class="footer-brand" alt="ISEL Game Studios" role="button">
-        </a>
-      </div>
-    </div>
-    <hr class="footer-divider"> <!-- Added horizontal line -->
-  </div>
-  <div class="container">
-    <div class="footer-row">
-      <div class="footer-col">
-        <h4>Socials</h4>
-        <div class="social-links">
-          <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-          <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-          <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us!</h4>
-        <p class="email">gamestudios@isel.pt</p>
-      </div>
-      <div class="footer-col">
-        <a class=" lang me-2" role="button" href="../index.html">Português</a>
-        <a class="lang active" role="button" href="#home">English</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-    <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarToggler = document.querySelector(".navbar-toggler");
-
-        if (navbarToggler) {
-          navbarToggler.addEventListener("click", function () {
-            navbarToggler.classList.toggle("change");
-          });
-        }
-      });
-    </script>
-
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Apr 24, 2025 23:59:59").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-      
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-      
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-    // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-      
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script>
 </body>
-
 </html>

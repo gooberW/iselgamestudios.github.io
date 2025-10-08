@@ -1,0 +1,61 @@
+@keyframes swipeUp {
+    from {
+        transform: translateY(20%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.event-card {
+    animation: swipeUp 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.box {
+    animation: swipeUp 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.home > * {
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeSlideUp 0.5s forwards;
+}
+
+.home > *:nth-child(1) { animation-delay: 0.4s; }
+
+.about-us > * {
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeSlideUp 0.5s forwards;
+}
+
+.about-us > *:nth-child(1) { animation-delay: 0.4s; }
+.about-us > *:nth-child(2) { animation-delay: 0.6s; }
+.about-us > *:nth-child(3) { animation-delay: 0.8s; }
+.about-us > *:nth-child(4) { animation-delay: 1s; }
+.about-us > *:nth-child(5) { animation-delay: 1.2s; }
+.about-us > *:nth-child(6) { animation-delay: 1.4s; }
+
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.event-card:hover {
+    rotate: -3deg;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: url('../assets/cursors/pointer.png'), pointer;
+}
