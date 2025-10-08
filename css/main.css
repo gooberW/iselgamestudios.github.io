@@ -574,13 +574,21 @@ a, button, .clickable,
     width: 90vw !important;
   }
 
+  .buttons a {
+    font-size: 14px;
+  }
+
+  .buttons i {
+    font-size: 20px;
+  }
+
   .events img, .events .event-card, .events .event-card-img {
-    width: 300px !important;
-    height: 300px !important;
+    width: 80vw !important;
+    height: 80vw !important;
   }
 
   .grid-container {
-    grid-auto-columns: 300px;
+    grid-auto-columns: 80vw;
     grid-auto-rows: 200px;
   }
 
