@@ -566,6 +566,14 @@ a, button, .clickable,
     max-width: 80%;
   }
   
+  .events, .projects {
+    padding: 50px 0;
+  }
+
+  .join-us {
+    padding: 100px 0 50px !important;
+  }
+  
 }
 
 @media (max-width: 405px) {
