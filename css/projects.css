@@ -71,6 +71,7 @@
 
 @media (max-width: 450px) {
     #project-banner .title {
-        font-size: 32px !important;
+        font-size: 30px !important;
+        padding: 0 10vw;
     }
 }
