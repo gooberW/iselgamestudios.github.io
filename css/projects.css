@@ -51,6 +51,11 @@
   color: var(--faded-white);
 }
 
+.nsb .nav-links li a:hover {
+    background-color: #d9db22 !important;
+    color: var(--nav-color) !important;
+}
+
 .buttons a:hover {
     color: var(--contrast-color) !important ;
 }
