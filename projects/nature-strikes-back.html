@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISEL Game Studios</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -32,47 +33,43 @@
         <header id="navbar">
             <nav class="navbar">
 
-                <a href="index.html#home">
-                    <img class="logo" src="assets/icon_blue.png" alt="Logo">
+                <a href="../index.html#home">
+                    <img class="logo" src="../assets/IGS_Icon_white.png" alt="Logo">
                 </a>
 
+                <ul class="menu">
+                     <li><a href="../index.html#events">Eventos</a></li>
+                    <li><a href="../index.html#projects">Projetos</a></li>
+                    <li><a href="../index.html#jams">Game Jams</a></li>
+                    <li><a href="../sobre-nos.html">Sobre Nós</a></li>
+                </ul>
+
                 <ul class="nav-links">
-                    <li><a href="#events">Eventos</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#jams">Game Jams</a></li>
-                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                    <li><a href="../index.html#events">Eventos</a></li>
+                    <li><a href="../index.html#projects">Projetos</a></li>
+                    <li><a href="../index.html#jams">Game Jams</a></li>
+                    <li><a href="../sobre-nos.html">Sobre Nós</a></li>
                 </ul>
 
                 <div class="buttons">
+                    <a onclick=showLinks() class="menu-btn"><i class="bi bi-list"></i></a>
                     <a class="active" href="#">PT</a>
-                    <a href="en/about-us.html">EN</a>
+                    <a href="#">EN</a>
                 </div>
 
             </nav>
         </header>
 
-        <section id="about-us">
-            <div class="about-us">
-                <h4 class="subtitle">Nós somos</h4>
-                <h1 class="title">ISEL Game Studios</h1>
-                <p>
-                    O <strong>ISEL Game Studios</strong> é um clube dedicado ao desenvolvimento de videojogos, fundado em <strong>2025</strong> por alunos do segundo ano da 
-                    <strong>Licenciatura em Engenharia Informática e Multimédia (LEIM) do ISEL</strong>.  
-                    Acreditamos que criar jogos vai além da programação, por isso reunimos estudantes de diferentes áreas, como a arte e o som, para colaborar e aprender juntos.
-                </p>
-                <p>
-                O nosso objetivo é proporcionar um ambiente onde os membros possam aprender, experimentar e colaborar, independentemente do seu nível de experiência.  
-                Seja programador, artista, designer ou apenas alguém com curiosidade pelo mundo dos videojogos, qualquer aluno do 
-                <strong>Instituto Politécnico de Lisboa (IPL)</strong> pode juntar-se a nós e participar nos nossos projetos e eventos.  
-                </p>
-                <p>
-                    Ao longo do ano, organizamos <strong>Game Jams, workshops, palestras e projetos colaborativos</strong>, ajudando os membros a desenvolver as suas competências  
-                    e a ganhar experiência prática na indústria dos videojogos.  
-                </p>
-                <p>
-                Se tens interesse em desenvolver jogos e trabalhar em equipa, <strong>junta-te a nós e começa a criar!</strong>   
-                </p>
-                </div>
+        <section id="project-banner">
+            <div class="project-banner" style="background-image: url(../assets/nsb_banner.png);">
+                
+            </div>
+            <div class="title">Nature Strikes Back</div>
+                <p>“Nature Strikes Back” é um dos projetos atualmente em desenvolvimento no clube, com estreia prevista para a 
+                    Lisboa Games Week 2025. Trata-se de um Top-Down Shooter inspirado na estética dos B-movies dos anos 50, 
+                    combinando ação intensa com um toque de humor retro. Neste jogo, o protagonista “MAN” enfrenta uma horda de monstros-planta que 
+                    invadiram a sua cidade, numa batalha épica entre o ser humano e a fúria da natureza.</p>
+            
         </section>
 
         <section id="team">
@@ -91,17 +88,12 @@
                     </div>
                     <div class="col">
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            <h4 class="member-name">Diogo Correia</h4>
+                            <h4 class="member-name">Sofia Salgado</h4>
                         </a>
                     </div>
                     <div class="col">
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            <h4 class="member-name">Tiago Rodrigues</h4>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            <h4 class="member-name">João Simas</h4>
+                            <h4 class="member-name">Ricardo Peres</h4>
                         </a>
                     </div>
                 </div>
@@ -112,7 +104,7 @@
             <div class="row">
                 <div class="col">
                     <a href="#about-us">
-                        <img src="assets/IGS_Logo_white_2.png" class="logo">
+                        <img src="../assets/IGS_Logo_white_2.png" class="logo">
                     </a>  
                 </div>
                 <div class="col">
@@ -148,7 +140,7 @@
     
 
     
-<script src="scripts/navbar.js"></script>
-<script src="scripts/page_transition.js"></script>
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/page_transition.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </body>
