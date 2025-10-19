@@ -184,7 +184,7 @@ a, button, .clickable,
 
 .jam h1, .jam p, .jam i,
 .jam-title, .jams .date-icon { 
-  color: var(--accent-color) !important;
+  color: #ff5500 !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -192,7 +192,7 @@ a, button, .clickable,
   color: var(--primary-color) !important;
 }
 
-.jam:hover { background-color: var(--accent-color); }
+.jam:hover { background-color: #ff5500; }
 .jam-title {
   font-family: var(--title-font);
   font-size: 48px;
