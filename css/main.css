@@ -81,7 +81,8 @@ a, button, .clickable,
 }
 
 .navbar.scrolled {
-  background-color: var(--nav-color) !important;
+  background-color: #050522a5 !important;
+  backdrop-filter: blur(10px);
 }
 
 .buttons {
@@ -135,8 +136,8 @@ a, button, .clickable,
 .navbar.scrolled .buttons a:hover,
 .navbar.scrolled .menu-btn { color: var(--text-color) !important; }
 .navbar.scrolled .nav-links li a:hover {
-  background-color: var(--secondary-color) !important;
-  color: var(--text-color) !important;
+  background-color: var(--contrast-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .logo {
@@ -227,7 +228,7 @@ a, button, .clickable,
 
 /* Projects */
 .projects {
-  background-color: var(--primary-color);
+  background-color: var(--contrast-color);
   color: var(--primary-color);
   background-size: cover;
   background-position: center;
@@ -235,11 +236,11 @@ a, button, .clickable,
 }
 
 .projects .title, .projects p {
-  color: var(--contrast-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .projects p {
-  color: var(--faded-white) !important;
+  color: var(--primary-color) !important;
   margin-bottom: 30px;
 }
 
