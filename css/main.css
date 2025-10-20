@@ -171,7 +171,22 @@ a, button, .clickable,
 .jams { background-color: var(--contrast-color); }
 
 /* Jam cards */
-.jams a { text-decoration: none; }
+.jams a { 
+  text-decoration: none; 
+  color: var(--accent-color); 
+  font-family: var(--text-font); 
+}
+
+.jams .link {
+  text-decoration: underline !important;
+  color: var(--primary-color) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.jams .link:hover {
+  color: var(--accent-color) !important;
+}
+
 .jam {
   padding: 60px;
   background-color: var(--primary-color);
@@ -181,7 +196,9 @@ a, button, .clickable,
   align-items: center;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
 }
+
 
 .jam h1, .jam p, .jam i,
 .jam-title, .jams .date-icon { 
