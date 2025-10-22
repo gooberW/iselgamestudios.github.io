@@ -1,33 +1,5 @@
-.active {
-    font-weight: bold;
-    color: var(--primary-color) !important;
-}
-
-.buttons a {
-    text-decoration: none;
-    color: var(--faded-text-color);
-    padding: 0px 5px;
-    transition: color 0.3s ease-out;
-    font-family: var(--accent-font);
-}
-
-.buttons a:hover {
-    color: var(--primary-color);
-    
-}
-
 .about-us p{
     margin-bottom: 30px;
-}
-
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding-left: 20px;
-}
-
-.nav-links li a:hover {
-    background-color: var(--accent-color);
 }
 
 /* About Us */
@@ -73,23 +45,11 @@
     transition: 0.2s ease-in-out;
 }
 
-.navbar.scrolled .nav-links li a {
-    color: var(--text-color);
+.nav-links li a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
-.navbar.scrolled .active {
-    color: var(--text-color) !important;
-}
-
-
-.navbar.scrolled .buttons a:hover {
-    color: var(--text-color);
-}
-
-.navbar.scrolled .nav-links li a:hover {
-    background-color: var(--secondary-color) !important;
-    color: var(--text-color) !important;
-}
 
 #team {
     background-color: var(--contrast-color);
