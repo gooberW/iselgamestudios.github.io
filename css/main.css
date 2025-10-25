@@ -456,7 +456,7 @@ a, button, .clickable,
   width: 100%;
   background-color: var(--accent-color);
   font-family: var(--text-font);
-  background-image: url("../assets/logo_home_animation.gif");
+  background-image: url("../assets/home_animation.gif");
 }
 
 .home-logo { width: 40vw; height: auto; }
