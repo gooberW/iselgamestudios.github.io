@@ -23,6 +23,7 @@
   --text-color: #fff;
   --faded-text-color: #0000008f;
   --faded-white: #ffffff8f;
+  --border-color:#0c0c0c;
   --border-radius: 20px;
   --text-font: 'Inconsolata', Arial, monospace;
   --title-font: 'MODERNIZ', Arial, sans-serif;
@@ -48,7 +49,7 @@ body,
 p {
   font-family: var(--text-font);
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -69,7 +70,7 @@ a, button, .clickable,
 }
 
 .navbar {
-  background: transparent;
+  background-color: var(--nav-color);
   padding: 25px 35px;
   border-radius: var(--border-radius);
   display: flex;
@@ -95,17 +96,17 @@ a, button, .clickable,
 
 .buttons a {
   text-decoration: none;
-  color: var(--faded-text-color);
+  color: var(--faded-white);
   padding: 0 5px;
   font-family: var(--accent-font);
   transition: color 0.3s ease-out;
 }
 
-.buttons a:hover { color: var(--primary-color); }
+.buttons a:hover { color: var(--contrast-color); }
 
 .active {
   font-weight: bold;
-  color: var(--primary-color) !important;
+  color: var(--contrast-color) !important;
 }
 
 /* Navbar links */
@@ -117,16 +118,17 @@ a, button, .clickable,
 
 .nav-links li { display: inline-block; }
 .nav-links li a {
-  color: var(--primary-color);
+  color: var(--contrast-color);
   text-decoration: none;
   font-family: var(--accent-font);
   padding: 8px 20px;
   border-radius: var(--border-radius);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-links li a:hover {
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 /* Navbar scrolled overrides */
@@ -230,8 +232,8 @@ a, button, .clickable,
 .jams p { color: var(--primary-color); margin-bottom: 30px; }
 
 /* Events */
-.events { background-color: var(--primary-color); }
-.events p { color: var(--faded-white); margin-bottom: 30px; }
+.events { background-color: var(--accent-color); }
+.events p { color: var(--primary-color); margin-bottom: 30px; }
 .event-card {
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
@@ -240,30 +242,35 @@ a, button, .clickable,
   transition: all 0.5s ease-in-out;
 }
 
+.events .title {
+  color: var(--primary-color);
+  margin: 0;
+}
+
 .events .over { filter: grayscale(100%); }
 
 /* Projects */
 .projects {
-  background-color: var(--contrast-color);
-  color: var(--primary-color);
+  background-color: var(--nav-color);
+  color: var(--contrast-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .projects .title, .projects p {
-  color: var(--primary-color) !important;
+  color: var(--contrast-color) !important;
 }
 
 .projects p {
-  color: var(--primary-color) !important;
+  color: var(--faded-white) !important;
   margin-bottom: 30px;
 }
 
 /* Titles */
 .title {
   font-family: var(--title-font);
-  font-size: 32px;
+  font-size: 42px;
   margin: 0;
   padding: 0;
 }
@@ -292,6 +299,7 @@ a, button, .clickable,
   transition: all 1.5s cubic-bezier(.23,1.19,.9,.98);
   background-size: cover;
   background-position: center;
+  border: 2px solid var(--border-color);
 }
 
 .box:hover {
@@ -521,6 +529,10 @@ a, button, .clickable,
   background-size: cover;
   z-index: -1;
   opacity: 0.6;
+}
+
+.carousel-item img{
+  background-size: cover;
 }
 
 /* Telemóvel */
