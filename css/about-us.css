@@ -30,6 +30,7 @@
   color: var(--primary-color);
 }
 
+/***** 
 
 .nav-links li {
     display: inline-block;
@@ -50,6 +51,7 @@
     color: var(--primary-color);
 }
 
+*****/
 
 #team {
     background-color: var(--contrast-color);

@@ -153,13 +153,72 @@ a, button, .clickable,
 }
 
 /* Sections */
-.home {
-  height: 100vh;
-  width: 100%;
+#home {
+  display: flex;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.home {
+  width: 100%;
+  height: 80vh;
+}
+
+.home .carousel{
+  padding: 0px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  touch-action: pan-x;
+}
+
+.carousel-slider img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.carousel-controls a{
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls a:hover{
+  background-color: var(--contrast-color);
+}
+
+
 
 #jams, .jams, .events, .projects {
   width: 100%;
@@ -509,30 +568,6 @@ a, button, .clickable,
 .join-btn:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
-}
-
-/* Carousel */
-.carousel {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.carousel-img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url('../assets/sandman_titlecard.png') no-repeat center center;
-  background-size: cover;
-  z-index: -1;
-  opacity: 0.6;
-}
-
-.carousel-item img{
-  background-size: cover;
 }
 
 /* Telemóvel */
