@@ -71,14 +71,14 @@ a, button, .clickable,
 
 .navbar {
   background-color: var(--nav-color);
-  padding: 25px 35px;
+  padding: 15px 25px;
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   max-height: 65px !important;
   margin: 0;
   border: 2px solid var(--border-color);
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .navbar.scrolled {
@@ -99,7 +99,7 @@ a, button, .clickable,
   color: var(--faded-white);
   padding: 0 5px;
   font-family: var(--accent-font);
-  transition: color 0.3s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .buttons a:hover { color: var(--contrast-color); }
@@ -211,7 +211,7 @@ a, button, .clickable,
   height: 0.7rem;
   border-radius: 50%;
   background-color: var(--accent-color);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .carousel-controls a:hover{
@@ -255,7 +255,7 @@ a, button, .clickable,
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin-bottom: 50px;
 }
 
@@ -263,7 +263,7 @@ a, button, .clickable,
 .jam h1, .jam p, .jam i,
 .jam-title, .jams .date-icon { 
   color: #ff5500 !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .jam:hover h1, .jam:hover p, .jam:hover i {
@@ -410,7 +410,7 @@ a, button, .clickable,
 .footer .social-links a {
   color: var(--text-color);
   font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .footer .social-links a:hover { color: var(--accent-color); }
@@ -501,7 +501,7 @@ a, button, .clickable,
   font-size: 20px;
   list-style: none;
   font-family: var(--accent-font);
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .menu li a {
@@ -562,7 +562,7 @@ a, button, .clickable,
   border-radius: var(--border-radius);
   color: var(--nav-color);
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .join-btn:hover {
