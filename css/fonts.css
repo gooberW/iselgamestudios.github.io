@@ -1,0 +1,44 @@
+/* DISPLAY */
+
+@font-face {
+    font-family: 'Geist';
+    src: url(../assets/fonts/Geist-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url(../assets/fonts/Geist-Bold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url(../assets/fonts/Geist-Italic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url(../assets/fonts/Geist-BoldItalic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderniz';
+    src: url(../assets/fonts/MODERNIZnew.otf) format('opentype');
+}
+
+:root {
+    --text-font: 'Geist', Arial, sans-serif;
+    --title-font: 'Moderniz', Arial, sans-serif;
+    --accent-font: 'Geist', Arial, sans-serif;
+}

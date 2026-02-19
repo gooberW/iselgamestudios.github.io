@@ -31,13 +31,13 @@
     font-size: 16px;
     transition: all 0.5s ease-in-out;
     color: var(--primary-color);
+    width: 40vw;
 }
 
 
 #project-banner .title {
     background-color: var(--contrast-color) !important;
     padding-bottom: 20px;
-    font-size: 32px;
     transition: all 0.5s ease-in-out;
     color: var(--primary-color);
 }
