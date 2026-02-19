@@ -30,6 +30,39 @@
   color: var(--primary-color);
 }
 
+#brand-assets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--contrast-color);
+    width: 100%;
+    color: var(--primary-color);
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.brand-assets-btn {
+    padding: 10px 20px;
+    border: var(--border);
+    width: fit-content;
+    border-radius: var(--border-radius);
+    transition: all 0.1s ease-in-out;
+}
+
+.brand-assets-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    cursor: url('../assets/cursors/pointer.png'), pointer;
+}
+
+.brand-assets-btn a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-family: 'Geist';
+}
+
 /***** 
 
 .nav-links li {
@@ -59,11 +92,10 @@
     text-align: center;
     font-family: var(--text-font);
     color: var(--primary-color);
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 .team {
-    padding: 150px;
 }
 
 .team a {
