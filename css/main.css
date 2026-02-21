@@ -95,24 +95,47 @@ a, button, .clickable,
 
 /* Navbar links */
 .nav-links {
+  display: flex;
   list-style: none;
   margin: 0;
   padding-left: 20px;
 }
 
-.nav-links li { display: inline-block; }
+.nav-links li { display: inline-block;}
 .nav-links li a {
   color: var(--contrast-color);
   text-decoration: none;
   font-family: var(--accent-font);
+  z-index: 0;
+  transition: color 0.1s ease;
+  font-size: 18px;
   padding: 8px 20px;
-  border-radius: var(--border-radius);
-  transition: all 0.1s ease-in-out;
+  position: relative;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.nav-links li a:hover{
+  color: var(--primary-color)
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
   background-color: var(--accent-color);
-  color: var(--primary-color);
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.1s ease;
+  z-index: -1;
+}
+
+.nav-links li a:active::before {
+  transform: scale(0.9);
 }
 
 /* Navbar scrolled overrides */

@@ -27,11 +27,12 @@
 
 #project-banner p {
     background-color: var(--contrast-color) !important;
-    padding: 10px 250px;
+    padding: 10px;
     font-size: 16px;
     transition: all 0.5s ease-in-out;
     color: var(--primary-color);
-    width: 40vw;
+    width: 60vw;
+    margin-bottom: 50px;
 }
 
 
@@ -51,9 +52,8 @@
   color: var(--faded-white);
 }
 
-.nsb .nav-links li a:hover {
+.nsb .nav-links li a::before {
     background-color: #d9db22 !important;
-    color: var(--nav-color) !important;
 }
 
 .buttons a:hover {
