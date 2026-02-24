@@ -168,6 +168,140 @@ a, button, .clickable,
   background-repeat: no-repeat;
 }
 
+.event-card.new::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+
+  width: 120px;
+  height: 120px;
+
+  background: var(--accent-color);
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+  animation: spin 6s linear infinite;
+  z-index: 2;
+
+  border-radius: 5px;
+}
+
+.event-card.new::after {
+  content: "New";
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+
+  width: 120px;
+  height: 120px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+
+  font-family: var(--accent-font);
+  font-size: 16px;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+
+  z-index: 10;
+  pointer-events: none;
+
+  animation: pump 0.3s ease infinite alternate;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--nav-color);
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.event-details .date,
+.event-details .time,
+.event-details .place {
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: var(--accent-font);
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-details .date p,
+.event-details .time p,
+.event-details .place p {
+  flex: 1;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--text-color) !important;
+  font-size: 18px !important;
+  font-family: var(--accent-font);
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent !important;
+  width: fit-content !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#event-content {
+  padding: 50px;
+  display: flex;
+  background-color: var(--contrast-color);
+  width: 100%;
+  font-family: var(--accent-font);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--primary-color);
+}
+
+#event-content p {
+  max-width: 60%;
+}
+
+.sign-btn {
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  font-size: 18px;
+}
+
+.sign-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pump {
+  from {
+    transform: rotate(-30deg) scale(0.9);
+  }
+  to {
+    transform: rotate(-30deg) scale(1.1);
+  }
+}
+
 .home {
   width: 100%;
   height: 80vh;
@@ -303,9 +437,10 @@ a, button, .clickable,
 .event-card {
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
 .events .title {
