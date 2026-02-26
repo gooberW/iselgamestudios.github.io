@@ -408,18 +408,28 @@ menu li a {
   margin-bottom: 50px;
 }
 
+h2 {
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+#project-banner a {
+  color: var(--accent-color) !important;
+}
+
 
 .jam h1, .jam p, .jam i,
 .jam-title, .jams .date-icon { 
-  color: #ff5500 !important;
+  color: var(--contrast-color) !important;
   transition: all 0.2s ease-in-out;
 }
 
 .jam:hover h1, .jam:hover p, .jam:hover i {
-  color: var(--primary-color) !important;
+  color: var(--contrast-color) !important;
 }
 
-.jam:hover { background-color: #ff5500; }
+.jam:hover { background-color: var(--accent-color); }
 .jam-title {
   font-family: var(--title-font);
   font-size: 48px;
