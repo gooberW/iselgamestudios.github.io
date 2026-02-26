@@ -611,8 +611,9 @@ a, button, .clickable,
   margin-left: auto;
   visibility: hidden;
   pointer-events: none;
-  color: var(--primary-color) !important;
+  color: var(--contrast-color) !important;
   font-weight: bold;
+  z-index: 10000000000000000000000000000000000;
 }
 .menu {
   margin: 0;
@@ -716,6 +717,7 @@ a, button, .clickable,
 
 /* Telemóvel */
 @media (max-width: 450px) {
+  .menu-btn { visibility: visible; pointer-events: all; }
 
   .box { padding: 20px; font-size: 14px; }
 
@@ -730,10 +732,25 @@ a, button, .clickable,
   .footer p { font-size: 18px; }
   .footer .social-links a { font-size: 24px; }
 
+  #event-content h1 {
+      width: 80% !important;
+    }
+
+  #event-content p {
+      font-size: 16px !important;
+    }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
 
   .join-us .title { font-size: 40px; }
-  .join-us p { font-size: 18px; padding: 0 20px; }
-  .join-btn { padding: 30px 50px; font-size: 22px; }
+  .join-us p { font-size: 16px !important; padding: 0 20px; }
+  .join-btn { padding: 20px 30px; font-size: 20px; }
 
 }
 
@@ -750,6 +767,13 @@ a, button, .clickable,
 
     .menu.visible { align-items: center; padding: 150px 0 20px; }
     .menu-btn { visibility: visible; pointer-events: all; }
+
+    .event-details {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
 
 
 }
