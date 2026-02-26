@@ -761,7 +761,8 @@ menu li a {
 @media (max-width: 1050px) {
     #navbar { width: 90vw; top: 10px; font-size: 18px; }
     .navbar { padding: 15px 20px; }
-    .nav-links { visibility: hidden; }
+    .nav-links { visibility: hidden; 
+    width: 0%;}
 
     .menu.visible { align-items: center; padding: 150px 0 20px; }
     .menu-btn { visibility: visible; pointer-events: all; }
