@@ -102,7 +102,7 @@ a, button, .clickable,
 }
 
 .nav-links li { display: inline-block;}
-.nav-links li a {
+.nav-links li a, .menu li a {
   color: var(--contrast-color);
   text-decoration: none;
   font-family: var(--accent-font);
@@ -113,16 +113,16 @@ a, button, .clickable,
   position: relative;
 }
 
-.nav-links li a:hover::before {
+.nav-links li a:hover::before, .menu li a:hover::before {
   transform: scale(1);
   opacity: 1;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover, .menu li a:hover {
   color: var(--primary-color)
 }
 
-.nav-links li a::before {
+.nav-links li a::before, .menu li a::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -132,6 +132,14 @@ a, button, .clickable,
   opacity: 0;
   transition: transform 0.2s ease, opacity 0.1s ease;
   z-index: -1;
+}
+
+.menu li a::before {
+  background-color: var(--contrast-color);
+}
+
+menu li a {
+  color: var(--primary-color);
 }
 
 .nav-links li a:active::before {
@@ -648,16 +656,6 @@ a, button, .clickable,
   font-family: var(--accent-font);
   transition: all 0.2s ease-out;
 }
-
-.menu li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: var(--border-radius);
-  transition: all 0.2s ease-in-out;
-}
-
-.menu li a:hover { background-color: var(--contrast-color); }
 
 /* Home */
 #home {
