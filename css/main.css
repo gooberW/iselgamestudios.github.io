@@ -766,6 +766,11 @@ h2 {
   #navbar {
   width: 80vw !important;
   }
+
+  .event-card {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -782,7 +787,7 @@ h2 {
       align-items: center;
     }
 
-    
+  #events .row { flex-direction: column; }   
 
 
 }
