@@ -130,7 +130,7 @@
 }
 
 /* Telemóvel */
-@media (max-width: 450px) {
+@media (max-width: 530px) {
 
     .subtitle {
         font-size: 24px !important;
@@ -141,9 +141,9 @@
         padding: 50px 20px !important;
     }
 
-    .team .title {
+    .team .title, #brand-assets .title {
         font-size: 24px !important;
-    }
+    }   
 
     .team h4 {
         font-size: 18px !important;
