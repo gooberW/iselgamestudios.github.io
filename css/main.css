@@ -485,8 +485,7 @@ h2 {
 .event-card-img {
   height: 60%;
   overflow: hidden;
-  border-bottom: var(--border);
-  border-radius: 1em;
+  border-radius: 0.75em;
   margin-bottom: 0.5em;
   flex: 1;
   display: flex;
