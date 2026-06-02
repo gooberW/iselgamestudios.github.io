@@ -12,70 +12,52 @@
 </head>
 
 <body>
-    <div class="transition">
-        <div class="transition-row row-1">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-        </div>
-        <div class="transition-row row-2">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-        </div>
-    </div>
+<div class="app">
+    <header id="navbar">
+        <nav class="navbar">
 
-    <div class="app">
-        <header id="navbar">
-            <nav class="navbar">
+            <a href="##home">
+                <img class="logo" src="../assets/IGS_Icon_white.png" alt="Logo">
+            </a>
 
-                <a href="##home">
-                    <img class="logo" src="../assets/IGS_Icon_white.png" alt="Logo">
-                </a>
+            <ul class="menu">
+                <li><a href="#events">Events</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#jams">Game Jams</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
 
-                <ul class="menu">
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#jams">Game Jams</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
+            <ul class="nav-links">
+                <li><a href="#events">Events</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#jams">Game Jams</a></li>
+                <li><a href="about-us.html">About Us</a></li>
 
-                <ul class="nav-links">
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#jams">Game Jams</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    
-                </ul>
+            </ul>
 
-                <div class="buttons">
-                    <a class="menu-btn"><i class="bi bi-list"></i></a>
-                    <a href="../index.html">PT</a>
-                    <a href="#" class="active">EN</a>
-                </div>
-
-            </nav>
-            
-        </header>
-
-        <!--carousel-->
-        <section id="#home" class="home">
-            <div class="carousel">
-                <div class="carousel-slider">
-                    <img id="slide1" src="assets/vroom_vroom_banner.png" alt="Vroom Vroom Jam Banner">
-                    <img id="slide2" src="assets/nsb_banner.png" alt="Nature Strikes Back Banner">
-                </div>
-                <div class="carousel-controls">
-                    <a href="#slide1"></a>
-                    <a href="#slide2"></a>
-                </div>
+            <div class="buttons">
+                <a class="menu-btn"><i class="bi bi-list"></i></a>
+                <a href="../index.html">PT</a>
+                <a href="#" class="active">EN</a>
             </div>
 
-        
+        </nav>
+
+    </header>
+
+    <!--carousel-->
+    <section id="#home" class="home">
+        <div class="carousel">
+            <div class="carousel-slider">
+                <img id="slide1" src="assets/vroom_vroom_banner.png" alt="Vroom Vroom Jam Banner">
+                <img id="slide2" src="assets/nsb_banner.png" alt="Nature Strikes Back Banner">
+            </div>
+            <div class="carousel-controls">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+            </div>
+        </div>
+
 
         <section id="events" class="events">
             <h1 class="title">Events</h1>
@@ -102,9 +84,11 @@
             <h1 class="title">Projects</h1>
             <p>Long Term Projects</p>
             <div class="grid-container">
-                <a href="../projects/the-sandman.html" class="box" style="grid-area: box-1; background-image: url(../assets/sandman_titlecard.png);"></a>
+                <a href="../projects/the-sandman.html" class="box"
+                   style="grid-area: box-1; background-image: url(../assets/sandman_titlecard.png);"></a>
                 <div class="box" style="grid-area: box-2"><h1>EM BREVE</h1></div>
-                <a href="../projects/nature-strikes-back.html" class="box" style="grid-area: box-3; background-image: url(../assets/nsb_banner.png);"></a>
+                <a href="../projects/nature-strikes-back.html" class="box"
+                   style="grid-area: box-3; background-image: url(../assets/nsb_banner.png);"></a>
                 <div class="box" style="grid-area: box-4"><h1>EM BREVE</h1></div>
             </div>
         </section>
@@ -119,14 +103,14 @@
                     <p>22nd to 30th of October 2025</p>
                 </div>
             </a>
-            
+
             <a class="link" href="https://isel-game-studios.itch.io/">See more (itch.io)</a>
-            
+
         </section>
 
         <section id="join-us" class="join-us">
             <h1 class="title">Join Us!</h1>
-            <p>We're always looking for new members, so if you're a university student and you want to join us, 
+            <p>We're always looking for new members, so if you're a university student and you want to join us,
                 just fill out the form clicking on the button below!</p>
             <a href="https://forms.gle/JL4B5uN6mMXcCF6QA" class="join-btn">Go!</a>
         </section>
@@ -136,7 +120,7 @@
                 <div class="col">
                     <a href="##home">
                         <img src="../assets/IGS_Logo_white_2.png" class="logo">
-                    </a>  
+                    </a>
                 </div>
                 <div class="col">
                     <h4>Contact Us</h4>
@@ -145,13 +129,15 @@
                 <div class="col">
                     <h4>Socials</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/isel_game_studios/" target="_blank"
+                           rel="noopener noreferrer">
                             <i class="bi bi-instagram"></i>
                         </a>
                         <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-twitter-x"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank"
+                           rel="noopener noreferrer">
                             <i class="bi bi-linkedin"></i>
                         </a>
                         <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
@@ -166,14 +152,11 @@
                 </div>
             </div>
         </footer>
+    </section>
+</div>
 
-    </div>
-
-    
 
 <script src="../scripts/navbar.js"></script>
-<script src="../scripts/page_transition.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
 </body>
 </html>

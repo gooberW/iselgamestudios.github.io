@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IGS_brand_assets">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assets/IGS_brand_assets.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,7 +11,7 @@
 }
 
 .about-us .subtitle {
-  font-size: 40px;
+  font-size: xx-large;
   font-family: var(--text-font);
   color: var(--primary-color);
   margin: 0;
@@ -20,7 +20,8 @@
 .about-us .title {
   font-size: 8vw;
   font-family: var(--title-font);
-  margin-bottom: 10px;
+    font-weight: 600;
+  margin-bottom: 0.1em;
   color: var(--primary-color);
 }
 
@@ -100,7 +101,7 @@
 
 .team a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--nav-color);
     transition: color 0.3s ease-in-out;
 }
 
@@ -111,8 +112,7 @@
 }
 
 .team .title {
-    color: var(--primary-color);
-    padding-bottom: 20px;
+    color: var(--nav-color);
 }
 
 .team .col {
