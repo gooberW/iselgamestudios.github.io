@@ -1044,7 +1044,8 @@ a {
 @media (max-width: 1050px) {
     .nav-links {
         visibility: hidden;
-        width: 0%;
+        width: 0;
+        display: none;
     }
 
     .menu.visible {
