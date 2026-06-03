@@ -739,11 +739,6 @@ a {
     transition: all 0.3s ease;
 }
 
-.box:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .box:hover img {
     transform: scale(1.05);
 }
@@ -772,9 +767,10 @@ a {
 
 .overlay h1 {
     position: absolute;
-    bottom: 0.5em;
+    bottom: 0.25em;
     left: 0.5em;
     z-index: 52;
+    font-weight: 500;
 }
 
 .grid-container a {
