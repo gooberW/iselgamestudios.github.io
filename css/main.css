@@ -108,7 +108,6 @@ a, button, .clickable,
 
 .buttons {
     margin-left: auto;
-    padding: 0.5em 1.5em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1030,7 +1029,7 @@ a {
     }
 
     .navbar {
-        padding: 0.5em 1em;
+        padding: 0.5em 2em;
     }
 
 }
