@@ -1,14 +1,14 @@
 /* Root Vars */
 :root {
-    --nav-color: #010117;
-    --primary-color: #0d0435;
+    --nav-color: #000000;
+    --primary-color: #0d0d0e;
     --secondary-color: #23232e;
     --accent-color: #f10013;
     --contrast-color: #ededf5;
     --text-color: #fff;
     --faded-text-color: #0000008f;
-    --faded-white: #6d74da;
-    --border-color: #0e0360;
+    --faded-white: #9494a3;
+    --border-color: #3f3e4a;
     --border: 1px solid var(--border-color);
     --border-radius: 1em;
 
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: linear-gradient(45deg, #dd1111 0%, #010410 18%, #070639 50%, #030215 78%, #dd1111 100%);
+    background: linear-gradient(45deg, #dd1111 0%, #030c25 18%, #000000 50%, #020213 78%, #dd1111 100%);
     background-size: 200% 200%;
     animation: gradient-aurora 12s ease alternate infinite;
 }
@@ -89,7 +89,7 @@ a, button, .clickable,
 }
 
 .navbar {
-    background-color: rgb(1 1 23 / 0.9);
+    background-color: rgb(0 0 0 / 0.9);
     padding: 0.5em 3em;
     display: flex;
     align-items: center;
