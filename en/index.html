@@ -44,7 +44,7 @@
 </header>
 
 <!--carousel-->
-<section id="#home" class="home">
+<section id="home" class="home">
     <div class="carousel">
         <div class="carousel-slider">
             <img id="slide1" src="../assets/carsim.jpg" alt="IGS X ISEL CarSim">
@@ -138,9 +138,20 @@
         <h1 class="title">Projects</h1>
     </div>
     <div class="grid-container">
-        <a href="../projects/nature-strikes-back.html" class="box"
-           style="background-image: url(../assets/nsb_banner.png);"></a>
-        <div class="box" style="background-image: url(../assets/carsim.jpg);"><h1>ISEL CarSim</h1></div>
+        <a href="../projects/nature-strikes-back.html" class="box">
+            <div class="overlay">
+                <h1>Nature Strikes Back</h1>
+                <div class="gradient"></div>
+            </div>
+            <img src="../assets/nsb_banner.png">
+        </a>
+        <div class="box">
+            <div class="overlay">
+                <h1>ISEL CarSim</h1>
+                <div class="gradient"></div>
+            </div>
+            <img src="../assets/carsim.jpg">
+        </div>
         <div class="box"><h1>SOON</h1></div>
         <div class="box"><h1>SOON</h1></div>
     </div>
@@ -166,15 +177,26 @@
 </section>
 
 <footer id="footer" class="footer">
-    <div class="row">
+    <div class="row" id="footer-row">
         <div class="col">
-            <a href="##home">
-                <img src="../assets/IGS_Logo_white_2.png" class="logo">
-            </a>
+            <div class="row logos">
+                <a href="#home">
+                    <img src="../assets/IGS_Logo_white_2.png" class="logo">
+                </a>
+                <a href="http://www.isel.pt">
+                    <img src="../assets/isel_white.svg" class="logo" style="height: 20px">
+                </a>
+            </div>
+
         </div>
         <div class="col">
-            <h4>Contact Us</h4>
+            <h4>Contacta-nos</h4>
             <p>gamestudios@isel.pt</p>
+        </div>
+        <div class="col">
+            <h4>Recursos</h4>
+            <a href="http://www.isel.pt">ISEL</a>
+            <a href="http://www.ipl.pt">IPL</a>
         </div>
         <div class="col">
             <h4>Socials</h4>
