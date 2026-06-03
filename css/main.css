@@ -474,6 +474,7 @@ h2 {
 
 #project-banner a {
     color: var(--accent-color) !important;
+    text-decoration: underline;
 }
 
 
