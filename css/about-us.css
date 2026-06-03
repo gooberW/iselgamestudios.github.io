@@ -155,10 +155,6 @@
 
     .team .title, #brand-assets .title {
         font-size: 24px !important;
-    }   
-
-    .team h4 {
-        font-size: 18px !important;
     }
 
     .about-us {
@@ -170,6 +166,11 @@
     .team-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         padding: 1em;
+    }
+
+    .member-name {
+        font-size: medium;
+        padding: 1em 2em;
     }
 
 }
