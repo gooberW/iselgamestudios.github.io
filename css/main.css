@@ -7,8 +7,8 @@
     --contrast-color: #ededf5;
     --text-color: #fff;
     --faded-text-color: #0000008f;
-    --faded-white: #6e82e3;
-    --border-color: #1e118a;
+    --faded-white: #6d74da;
+    --border-color: #0e0360;
     --border: 1px solid var(--border-color);
     --border-radius: 1em;
 
@@ -92,13 +92,14 @@ a, button, .clickable,
 }
 
 .navbar {
-    background-color: var(--nav-color);
+    background-color: rgb(1 1 23 / 0.9);
     padding: 0.5em 3em;
     display: flex;
     align-items: center;
     margin: 0;
     border-bottom: var(--border);
     transition: all 0.2s ease-out;
+    backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
