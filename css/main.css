@@ -83,11 +83,11 @@ a, button, .clickable,
 
 /* Navbar */
 #navbar {
-    position: fixed;
-    z-index: 1000;
+    position: sticky;
+    top: 0;
+    z-index: 80;
     width: 100%;
     max-height: fit-content;
-    top: 0;
     font-size: medium;
 }
 
