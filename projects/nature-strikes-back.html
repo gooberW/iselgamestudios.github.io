@@ -14,139 +14,136 @@
 
 <body>
 
-<div class="app">
-    <header id="navbar">
-        <nav class="navbar nsb">
+<header id="navbar">
+    <nav class="navbar nsb">
 
-            <a href="../index.html#home">
-                <img class="logo" src="../assets/IGS_Icon_white.png" alt="Logo">
+        <a href="../index.html#home">
+            <img class="logo" src="../assets/IGS_Icon_white.png" alt="Logo">
+        </a>
+
+        <ul class="menu">
+            <li><a href="../index.html#events">Eventos</a></li>
+            <li><a href="../index.html#projects">Projetos</a></li>
+            <li><a href="../index.html#jams">Game Jams</a></li>
+            <li><a href="../sobre-nos.html">Sobre Nós</a></li>
+        </ul>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#events">Eventos</a></li>
+            <li><a href="../index.html#projects">Projetos</a></li>
+            <li><a href="../index.html#jams">Game Jams</a></li>
+            <li><a href="../sobre-nos.html">Sobre Nós</a></li>
+        </ul>
+
+        <div class="buttons">
+            <a onclick=showLinks() class="menu-btn"><i class="bi bi-list"></i></a>
+            <a class="active" href="#">PT</a>
+            <a href="#">EN</a>
+        </div>
+
+    </nav>
+</header>
+
+<section id="project-banner">
+    <div class="project-banner" style="background-image: url(../assets/nsb_banner.png);">
+
+    </div>
+    <h1 class="title">Nature Strikes Back</h1>
+    <p>“Nature Strikes Back” é um dos projetos atualmente em desenvolvimento no clube, com estreia prevista para a
+        Lisboa Games Week 2025. Trata-se de um Top-Down Shooter inspirado na estética dos B-movies dos anos 50,
+        combinando ação intensa com um toque de humor retro. Neste jogo, o protagonista “MAN” enfrenta uma horda de
+        monstros-planta que
+        invadiram a sua cidade, numa batalha épica entre o ser humano e a fúria da natureza.</p>
+
+    <p>Depois de algum tempo em desenvolvimento, lançámos finalmente a demo de Nature Strikes Back! Experimenta já
+        <a href="https://masterkun.itch.io/nature-strikes-back/devlog/1423286/nature-strikes-back-demo">Nature
+            Strikes Back</a></p>
+
+    <div class="demo-video">
+        <video loop muted autoplay poster="../assets/nsb_banner.png"
+               src="../assets/nsbGameplay.mp4"></video>
+    </div>
+
+
+</section>
+
+<section id="team">
+    <div class="team">
+        <div class="row title">
+            <h1 class="title">Equipa</h1>
+        </div>
+        <div class="team-grid">
+            <a href="https://duartefon.github.io/gamedev-portfolio/" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Duarte Fonseca</h4>
             </a>
 
-            <ul class="menu">
-                <li><a href="../index.html#events">Eventos</a></li>
-                <li><a href="../index.html#projects">Projetos</a></li>
-                <li><a href="../index.html#jams">Game Jams</a></li>
-                <li><a href="../sobre-nos.html">Sobre Nós</a></li>
-            </ul>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Gabriel Teixeira</h4>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="../index.html#events">Eventos</a></li>
-                <li><a href="../index.html#projects">Projetos</a></li>
-                <li><a href="../index.html#jams">Game Jams</a></li>
-                <li><a href="../sobre-nos.html">Sobre Nós</a></li>
-            </ul>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Sofia Salgado</h4>
+            </a>
 
-            <div class="buttons">
-                <a onclick=showLinks() class="menu-btn"><i class="bi bi-list"></i></a>
-                <a class="active" href="#">PT</a>
-                <a href="#">EN</a>
-            </div>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Ricardo Peres</h4>
+            </a>
 
-        </nav>
-    </header>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Sara Marcelino</h4>
+            </a>
 
-    <section id="project-banner">
-        <div class="project-banner" style="background-image: url(../assets/nsb_banner.png);">
-
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <h4 class="member-name">Diogo Correia</h4>
+            </a>
         </div>
-        <h1 class="title">Nature Strikes Back</h1>
-        <p>“Nature Strikes Back” é um dos projetos atualmente em desenvolvimento no clube, com estreia prevista para a
-            Lisboa Games Week 2025. Trata-se de um Top-Down Shooter inspirado na estética dos B-movies dos anos 50,
-            combinando ação intensa com um toque de humor retro. Neste jogo, o protagonista “MAN” enfrenta uma horda de
-            monstros-planta que
-            invadiram a sua cidade, numa batalha épica entre o ser humano e a fúria da natureza.</p>
+    </div>
+</section>
 
-        <p>Depois de algum tempo em desenvolvimento, lançámos finalmente a demo de Nature Strikes Back! Experimenta já
-            <a href="https://masterkun.itch.io/nature-strikes-back/devlog/1423286/nature-strikes-back-demo">Nature
-                Strikes Back</a></p>
-
-        <div class="demo-video">
-            <video loop muted autoplay poster="../assets/nsb_banner.png"
-            src="../assets/nsbGameplay.mp4"></video>
-        </div>
-
-
-    </section>
-
-    <section id="team">
-        <div class="team">
-            <div class="row title">
-                <h1 class="title">Equipa</h1>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a href="https://duartefon.github.io/gamedev-portfolio/" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Duarte Fonseca</h4>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Gabriel Teixeira</h4>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Sofia Salgado</h4>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Ricardo Peres</h4>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Sara Marcelino</h4>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <h4 class="member-name">Diogo Correia</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="footer" class="footer">
-        <div class="row">
-            <div class="col">
-                <a href="#about-us">
+<footer id="footer" class="footer">
+    <div class="row" id="footer-row">
+        <div class="col">
+            <div class="row logos">
+                <a href="#">
                     <img src="../assets/IGS_Logo_white_2.png" class="logo">
                 </a>
+                <a href="http://www.isel.pt">
+                    <img src="../assets/isel_white.svg" class="logo" style="height: 20px">
+                </a>
             </div>
-            <div class="col">
-                <h4>Contacta-nos</h4>
-                <p>gamestudios@isel.pt</p>
-            </div>
-            <div class="col">
-                <h4>Socials</h4>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/isel_game_studios/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </div>
+
+        </div>
+        <div class="col">
+            <h4>Contacta-nos</h4>
+            <p>gamestudios@isel.pt</p>
+        </div>
+        <div class="col">
+            <h4>Recursos</h4>
+            <a href="http://www.isel.pt">ISEL</a>
+            <a href="http://www.ipl.pt">IPL</a>
+        </div>
+        <div class="col">
+            <h4>Socials</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/isel_game_studios/" target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://x.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/isel-game-studios/" target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://youtube.com/@ISELGameStudios" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p>ISEL Game Studios, 2026</p>
-            </div>
-        </div>
-    </footer>
 
-</div>
-
+    </div>
+</footer>
 
 <script src="../scripts/navbar.js"></script>
 </body>

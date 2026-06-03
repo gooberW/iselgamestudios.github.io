@@ -22,14 +22,12 @@ html {
     box-sizing: border-box;
 }
 
-body,
-.app {
+body {
     margin: 0;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: url('../assets/cursors/arrow.png'), default;
     width: 100%;
     background: linear-gradient(45deg, #dd1111 0%, #010410 18%, #070639 50%, #030215 78%, #dd1111 100%);
     background-size: 200% 200%;
@@ -75,10 +73,9 @@ p {
     margin: 0;
 }
 
-/*  Cursor Rules  */
 a, button, .clickable,
 .box:hover, .footer .logo:hover, .menu-btn {
-    cursor: url('../assets/cursors/pointer.png'), pointer;
+    cursor: pointer;
 }
 
 /* Navbar */
@@ -100,6 +97,7 @@ a, button, .clickable,
     border-bottom: var(--border);
     transition: all 0.2s ease-out;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
@@ -931,13 +929,16 @@ a {
 
 /* Mobile menu */
 .menu-btn {
-    font-size: 22px;
+    font-size: large;
     margin-left: auto;
     visibility: hidden;
     pointer-events: none;
     color: var(--contrast-color) !important;
     font-weight: bold;
-    z-index: 10000000000000000000000000000000000;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu {
@@ -966,8 +967,13 @@ a {
     transform: translate(50%, 0);
 }
 
+i {
+    display: flex;
+    align-items: center;
+}
+
 .menu li {
-    font-size: 20px;
+    font-size: large;
     list-style: none;
     font-family: var(--accent-font);
     transition: all 0.2s ease-out;
@@ -982,7 +988,6 @@ a {
     width: 100%;
     background-color: var(--accent-color);
     font-family: var(--text-font);
-    background-image: url("../assets/home_animation.gif");
 }
 
 .home-logo {
@@ -1007,6 +1012,7 @@ a {
     margin: 0;
     font-size: xx-large;
     max-width: 80%;
+    margin-bottom: 0.5em;
 }
 
 .join-us p {
@@ -1018,8 +1024,8 @@ a {
 }
 
 .join-btn {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 1em 3em;
+    font-size: medium;
     font-family: var(--accent-font);
     background-color: var(--contrast-color);
     border-radius: var(--border-radius);
@@ -1040,6 +1046,10 @@ a {
         pointer-events: all;
     }
 
+    #home {
+        max-height: 50vh;
+    }
+
     .box {
         padding: 20px;
         font-size: 14px;
@@ -1052,7 +1062,7 @@ a {
     }
 
     #footer {
-        font-size: 20px;
+        font-size: medium;
     }
 
     .footer .col {
@@ -1060,11 +1070,11 @@ a {
     }
 
     .footer p {
-        font-size: 18px;
+        font-size: medium;
     }
 
     .footer .social-links a {
-        font-size: 24px;
+        font-size: large;
     }
 
     #event-content h1 {
@@ -1072,29 +1082,29 @@ a {
     }
 
     #event-content p {
-        font-size: 16px !important;
+        font-size: medium !important;
     }
 
     h1 {
-        font-size: 24px !important;
+        font-size: x-large !important;
     }
 
     p {
-        font-size: 14px !important;
+        font-size: medium;
     }
 
     .join-us .title {
-        font-size: 40px;
+        font-size: xx-large;
     }
 
     .join-us p {
-        font-size: 16px !important;
+        font-size: medium !important;
         padding: 0 20px;
     }
 
     .join-btn {
-        padding: 20px 30px;
-        font-size: 20px;
+        padding: 1em 3em;
+        font-size: medium;
     }
 
     .navbar {
@@ -1233,11 +1243,11 @@ a {
 
 @media (max-width: 405px) {
     .buttons a {
-        font-size: 14px;
+        font-size: medium;
     }
 
     .buttons i {
-        font-size: 20px;
+        font-size: medium;
     }
 
     .grid-container {
@@ -1245,11 +1255,11 @@ a {
     }
 
     .join-us .title {
-        font-size: 40px;
+        font-size: xx-large;
     }
 
     .join-us p {
-        font-size: 18px;
+        font-size: medium;
     }
 
 }

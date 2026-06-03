@@ -44,24 +44,33 @@
 }
 
 .brand-assets-btn {
-    padding: 10px 20px;
+    padding: 1em 2em;
     border: var(--border);
     width: fit-content;
     border-radius: var(--border-radius);
     transition: all 0.1s ease-in-out;
 }
 
+.brand-assets-btn a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
 .brand-assets-btn:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    cursor: url('../assets/cursors/pointer.png'), pointer;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.brand-assets-btn:hover a {
+    color: var(--text-color);
 }
 
 .brand-assets-btn a{
     text-decoration: none;
-    font-size: 16px;
-    color: var(--primary-color);
-    font-family: 'Geist';
+    font-size: medium;
+    color: var(--nav-color);
+    transition: all 0.1s ease;
 }
 
 /***** 
@@ -96,21 +105,6 @@
     padding-bottom: 50px;
 }
 
-.team {
-}
-
-.team a {
-    text-decoration: none;
-    color: var(--nav-color);
-    transition: color 0.3s ease-in-out;
-}
-
-.team a:hover {
-    color: var(--accent-color);
-    cursor: url('../assets/cursors/pointer.png'), pointer;
-    text-decoration: underline;
-}
-
 .team .title {
     color: var(--nav-color);
 }
@@ -126,7 +120,28 @@
 
 .member-name {
     margin: 0;
-    padding: 10px 0;;
+    padding: 1em 2em;
+    font-weight: 500;
+    border: var(--border);
+    border-radius: 1em;
+    color: var(--nav-color);
+    transition: all 0.1s ease;
+}
+
+.member-name:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.member-name.founder:hover {
+    background-color: var(--accent-color);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5em;
+    padding: 1em 5em;
 }
 
 /* Telemóvel */
@@ -152,11 +167,19 @@
         padding: 3em 20px 50px !important;
     }
 
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
 }
 
 @media (max-width: 990px) {
     .about-us .title {
         font-size: 12vw !important;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
