@@ -929,7 +929,7 @@ a {
 
 /* Mobile menu */
 .menu-btn {
-    font-size: large;
+    font-size: x-large;
     margin-left: auto;
     visibility: hidden;
     pointer-events: none;
