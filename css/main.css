@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: linear-gradient(45deg, #dd1111 0%, #001335 10%, #000000 75%, #000019 90%, #dd1111 100%);
+    background: linear-gradient(45deg, #dd1111 0%, #001335 20%, #000000 35%, #000019 80%, #dd1111 100%);
     background-size: 200% 200%;
     animation: gradient-aurora 12s ease alternate infinite;
 }
