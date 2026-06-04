@@ -8,28 +8,6 @@
     }
 }
 
-.event-card {
-    animation: swipeUp 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    transition: all 0.2s ease-in-out;
-}
-
-.type {
-    transition: all 0.2s ease-in-out;
-}
-
-.event-card img {
-    transition: all 0.3s ease-in-out;
-}
-
-.box {
-    animation: swipeUp 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    transition: all 0.2s ease-in-out;
-}
-
 
 @keyframes fadeSlideUp {
     to {
