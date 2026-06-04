@@ -597,11 +597,19 @@ h2 {
 }
 
 .row.events {
-    gap: 1em;
     padding: 1em 2em;
-    align-items: start;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.row.events .events-track {
+    display: flex;
+    gap: 1em;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.row.events .events-track .event-card {
+    flex: 0 0 calc(25% - 0.75em);
 }
 
 .type, .company {
@@ -1069,6 +1077,11 @@ i {
     color: var(--primary-color);
 }
 
+.hidden {
+    display: none;
+    pointer-events: none;
+}
+
 /* Telemóvel */
 @media (max-width: 450px) {
     .menu-btn {
@@ -1143,13 +1156,6 @@ i {
 
 }
 
-@media (max-width: 700px) {
-    .row.events {
-       flex-direction: column;
-        display: flex;
-    }
-}
-
 @media (max-width: 1050px) {
     .nav-links {
         visibility: hidden;
@@ -1171,8 +1177,8 @@ i {
         align-items: center;
     }
 
-    .row.events {
-        grid-template-columns: repeat(2, 1fr) !important;
+    .row.events .events-track .event-card {
+        flex: 0 0 calc(50% - 0.75em) !important;
     }
 
     .event-card p, .type, .company {
@@ -1199,16 +1205,12 @@ i {
 }
 
 @media (max-width: 1250px) {
-    .row.events {
-        grid-template-columns: repeat(3, 1fr);
+    .row.events .events-track .event-card {
+        flex: 0 0 calc(33% - 0.75em);
     }
 }
 
 @media (max-width: 850px) {
-    #events .row {
-        flex-direction: column;
-        padding-inline: 1em;
-    }
 
     .events .row.right {
         flex-direction: row !important;
@@ -1217,6 +1219,10 @@ i {
 
     .event-card {
         width: 100%;
+    }
+
+    .row.events .events-track .event-card {
+        flex: 0 0 calc(90%) !important;
     }
 
     .event-card p, .type, .company {

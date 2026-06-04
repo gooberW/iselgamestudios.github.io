@@ -59,7 +59,11 @@
 
 <section id="events" class="events">
     <div class="row title">
-        <h1 class="title">Events</h1>
+        <div class="row right">
+            <h1 class="title" style="margin-right: 0.5em;">Events</h1>
+            <button id="event-left" class="event-btn hidden"><i class="bi bi-chevron-left"></i></button>
+            <button id="event-right" class="event-btn hidden"><i class="bi bi-chevron-right"></i></button>
+        </div>
         <i class="bi bi-question-circle">
             <div class="tooltip">
                 <p>All events are intended for higher education students.
@@ -68,63 +72,85 @@
         </i>
     </div>
     <div class="row events">
-        <a class="event-card over">
-            <div class="event-card-img">
-                <img src="../assets/concept_art_ig_1.jpg" alt="Event Image">
-            </div>
-            <div class="event-card-content">
-                <p class="title">Concept Art Aplicada a Videojogos</p>
-                <div class="row">
-                    <p>May 6th, 2026</p>
-                    <div class="type">
-                        GameTalk
+        <div class="events-track">
+            <a class="event-card over">
+                <div class="event-card-img">
+                    <img src="../assets/vroom_vroom_banner.png" alt="Event Image">
+                </div>
+                <div class="event-card-content">
+                    <p class="title">Vroom Vroom Jam Gathering</p>
+                    <div class="row">
+                        <p>March 20th, 2026</p>
+                        <div class="type">
+                            Gathering
+                        </div>
+                    </div>
+                    <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
+                        <p class="orador">ISEL CarSim</p>
+                        <div class="company">
+                            ISEL
+                        </div>
                     </div>
                 </div>
-                <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
-                    <p class="orador">Inês Garcia</p>
-                    <div class="company">
-                        Professor @ ESELx
+            </a>
+            <a class="event-card over">
+                <div class="event-card-img">
+                    <img src="../assets/concept_art_ig_1.jpg" alt="Event Image">
+                </div>
+                <div class="event-card-content">
+                    <p class="title">Concept Art Aplicada a Videojogos</p>
+                    <div class="row">
+                        <p>May 6th, 2026</p>
+                        <div class="type">
+                            GameTalk
+                        </div>
+                    </div>
+                    <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
+                        <p class="orador">Inês Garcia</p>
+                        <div class="company">
+                            Professor @ ESELx
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="event-card over">
+                <div class="event-card-img">
+                    <img src="../assets/git_igs.png" alt="Event Image">
+                </div>
+                <div class="event-card-content">
+                    <p class="title">Desmistificação do Git</p>
+                    <div class="row">
+                        <p>May 9th, 2025</p>
+                        <div class="type">
+                            GameTalk
+                        </div>
+                    </div>
+                    <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
+                        <p class="orador">Duarte Fonseca</p>
+                        <div class="company">
+                            Student @ ISEL
+                        </div>
                     </div>
                 </div>
             </div>
-        </a>
-        <div class="event-card over">
-            <div class="event-card-img">
-                <img src="../assets/git_igs.png" alt="Event Image">
-            </div>
-            <div class="event-card-content">
-                <p class="title">Desmistificação do Git</p>
-                <div class="row">
-                    <p>May 9th, 2025</p>
-                    <div class="type">
-                        GameTalk
-                    </div>
+            <div class="event-card over">
+                <div class="event-card-img">
+                    <img src="../assets/insta_igs.png" alt="Event Image">
                 </div>
-                <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
-                    <p class="orador">Duarte Fonseca</p>
-                    <div class="company">
-                        Student @ ISEL
+                <div class="event-card-content">
+                    <p class="title">From Concept to Release</p>
+                    <div class="row">
+                        <p>April 10th, 2025</p>
+                        <div class="type">
+                            GameTalk
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="event-card over">
-            <div class="event-card-img">
-                <img src="../assets/insta_igs.png" alt="Event Image">
-            </div>
-            <div class="event-card-content">
-                <p class="title">From Concept to Release</p>
-                <div class="row">
-                    <p>April 10th, 2025</p>
-                    <div class="type">
-                        GameTalk
-                    </div>
-                </div>
 
-                <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
-                    <p class="orador">Diogo Cardoso</p>
-                    <div class="company">
-                        Imagination Overflow
+                    <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
+                        <p class="orador">Diogo Cardoso</p>
+                        <div class="company">
+                            Imagination Overflow
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,4 +249,5 @@
 
 </body>
 <script src="../scripts/navbar.js"></script>
+<script src="../scripts/events.js"></script>
 </html>
