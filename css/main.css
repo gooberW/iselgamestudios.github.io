@@ -808,10 +808,11 @@ a {
 
 .overlay h1 {
     position: absolute;
-    bottom: 0.25em;
-    left: 0.5em;
+    bottom: 0.5em;
+    left: 0.75em;
     z-index: 52;
     font-weight: 500;
+    margin: 0;
 }
 
 .grid-container a {
