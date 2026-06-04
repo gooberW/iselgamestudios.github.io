@@ -62,7 +62,7 @@
 
 
 .event-card:hover {
-    cursor: url('../assets/cursors/pointer.png'), pointer;
+    cursor: pointer;
     background-color: var(--navbar-background-color);
 }
 

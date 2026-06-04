@@ -48,7 +48,7 @@
     <div class="carousel">
         <div class="carousel-slider">
             <img id="slide1" src="assets/carsim.jpg" alt="IGS X ISEL CarSim">
-            <img id="slide2" src="assets/nsb_banner.png" alt="Nature Strikes Back Banner">
+            <img id="slide2" src="assets/nsb_banner.jpg" alt="Nature Strikes Back Banner">
         </div>
         <div class="carousel-controls">
             <a href="#slide1"></a>
@@ -59,18 +59,43 @@
 
 <section id="events" class="events">
     <div class="row title">
-        <h1 class="title">Eventos</h1>
+        <div class="row right">
+            <h1 class="title" style="margin-right: 0.5em;">Eventos</h1>
+            <button id="event-left" class="event-btn hidden"><i class="bi bi-chevron-left"></i></button>
+            <button id="event-right" class="event-btn hidden"><i class="bi bi-chevron-right"></i></button>
+        </div>
         <i class="bi bi-question-circle">
             <div class="tooltip">
                 <p>Todos os eventos destinam-se a estudantes do ensino superior.
                     A participação está sujeita a inscrição prévia obrigatória.</p>
             </div>
         </i>
+
     </div>
     <div class="row events">
         <a class="event-card over">
             <div class="event-card-img">
-                <img src="assets/concept_art_ig_1.png" alt="Event Image">
+                <img src="assets/vroom_vroom_banner.png" alt="Event Image">
+            </div>
+            <div class="event-card-content">
+                <p class="title">Vroom Vroom Jam Gathering</p>
+                <div class="row">
+                    <p>20 de Março, 2026</p>
+                    <div class="type">
+                        Gathering
+                    </div>
+                </div>
+                <div class="row" style="border-top: var(--border); padding-top: 0.5em;">
+                    <p class="orador">ISEL CarSim</p>
+                    <div class="company">
+                        ISEL
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="event-card over">
+            <div class="event-card-img">
+                <img src="assets/concept_art_ig_1.jpg" alt="Event Image">
             </div>
             <div class="event-card-content">
                 <p class="title">Concept Art Aplicada a Videojogos</p>
@@ -143,14 +168,14 @@
                 <h1>Nature Strikes Back</h1>
                 <div class="gradient"></div>
             </div>
-            <img src="assets/nsb_banner.png">
+            <img src="assets/nsb_banner.jpg" alt="Nature Strikes Back">
         </a>
         <div class="box">
             <div class="overlay">
                 <h1>ISEL CarSim</h1>
                 <div class="gradient"></div>
             </div>
-            <img src="assets/carsim.jpg">
+            <img src="assets/carsim.jpg" alt="IGS x ISEL CarSim">
         </div>
         <div class="box"><h1>EM BREVE</h1></div>
         <div class="box"><h1>EM BREVE</h1></div>
@@ -181,10 +206,10 @@
         <div class="col">
             <div class="row logos">
                 <a href="#home">
-                    <img src="assets/IGS_Logo_white_2.png" class="logo">
+                    <img src="assets/IGS_Logo_white_2.png" class="logo" alt="IGS">
                 </a>
-                <a href="http://www.isel.pt">
-                    <img src="assets/isel_white.svg" class="logo" style="height: 20px">
+                <a href="https://www.isel.pt">
+                    <img src="assets/isel_white.svg" class="logo" style="height: 20px" alt="ISEL">
                 </a>
             </div>
 
@@ -195,8 +220,8 @@
         </div>
         <div class="col">
             <h4>Recursos</h4>
-            <a href="http://www.isel.pt">ISEL</a>
-            <a href="http://www.ipl.pt">IPL</a>
+            <a href="https://www.isel.pt">ISEL</a>
+            <a href="https://www.ipl.pt">IPL</a>
         </div>
         <div class="col">
             <h4>Socials</h4>
@@ -217,7 +242,6 @@
                 </a>
             </div>
         </div>
-
     </div>
 </footer>
 
