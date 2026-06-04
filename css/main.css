@@ -3,7 +3,7 @@
     --nav-color: #000000;
     --primary-color: #0d0d0e;
     --secondary-color: #23232e;
-    --accent-color: #f10013;
+    --accent-color: #f11a2b;
     --contrast-color: #ededf5;
     --text-color: #fff;
     --faded-text-color: #0000008f;
@@ -11,7 +11,6 @@
     --border-color: #3f3e4a;
     --border: 1px solid var(--border-color);
     --border-radius: 1em;
-
 }
 
 html {
