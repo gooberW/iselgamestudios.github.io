@@ -1222,7 +1222,7 @@ i {
     }
 
     .row.events .events-track .event-card {
-        flex: 0 0 calc(90%) !important;
+        flex: 0 0 calc(80vw) !important;
     }
 
     .event-card p, .type, .company {
@@ -1240,6 +1240,11 @@ i {
 
     .row.title {
         flex-direction: row !important;
+        padding-inline: 1em !important;
+    }
+
+    .row.events {
+        padding-inline: 1em !important;
     }
 
     .tooltip {
