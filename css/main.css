@@ -478,7 +478,6 @@ h2 {
     text-decoration: underline;
 }
 
-
 .jam h1, .jam p, .jam i,
 .jam-title, .jams .date-icon {
     color: var(--contrast-color) !important;
