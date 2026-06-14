@@ -1017,15 +1017,15 @@ i {
     transition: all 0.2s ease-out;
 }
 
-/* Home */
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     background-color: var(--accent-color);
     font-family: var(--text-font);
+    border-bottom: var(--border);
 }
 
 .home-logo {
