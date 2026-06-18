@@ -609,7 +609,7 @@ h2 {
     flex: 0 0 calc(25% - 0.75em);
 }
 
-.type, .company {
+.type, .company, .location {
     border-radius: 1em;
     padding: 0.25em 0.5em;
     border: var(--border);
@@ -620,8 +620,9 @@ h2 {
     color: var(--faded-white);
 }
 
-.company {
+.company, .location {
     border-radius: 0.25em;
+    gap: 0.25em;
 }
 
 a {
