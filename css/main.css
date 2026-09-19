@@ -442,6 +442,11 @@ menu li a {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    max-height: 50vh;
+    overflow: hidden;
+    padding: 5em;
+    border-radius: var(--border-radius);
+    width: 100%;
 }
 
 .jams .link {
@@ -455,7 +460,6 @@ menu li a {
 }
 
 .jam {
-    padding: 60px;
     background-color: var(--navbar-background-color);
     border-radius: var(--border-radius);
     display: flex;
@@ -493,6 +497,7 @@ h2 {
 
 .jam-title {
     font-family: var(--title-font);
+    font-weight: 600;
     font-size: 48px;
     margin: 0;
 }
@@ -774,6 +779,7 @@ a {
     flex: 1;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .box img {
